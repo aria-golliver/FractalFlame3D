@@ -1,0 +1,37 @@
+newmtl big_sphere
+Ka  0.5 0.5 0.5 
+Kd  0.4 0.4 0.4
+Ks  0 0 0 
+r 0.5
+d  1
+
+newmtl red
+Ka  0.5 0 0
+Kd  0.5 0 0
+Ks  0.5 0.5 0.5
+Ns 1
+r 0.5
+d  1
+
+newmtl green
+Ka  0 0.5 0
+Kd  0 0.5 0
+Ks  0.5 0.5 0.5
+Ns 10
+r 0.5
+d  1
+
+newmtl blue
+Ka  0 0 0.5
+Kd  0 0 0.5
+Ks  0.5 0.5 0.5
+Ns 100
+r 0.5
+d  1
+
+# units are watts/nm^2
+newmtl light
+Ka 1.5 1.5 1.5
+Kd 10.0 10.0 10.0
+Ks  2 2 2
+

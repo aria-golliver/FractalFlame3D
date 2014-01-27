@@ -1,0 +1,68 @@
+newmtl big_sphere
+Ka  0.5 0.5 0.5 
+Kd  0.4 0.4 0.4
+Ks  0 0 0 
+r 0.5
+d  1
+
+newmtl red
+Ka  0.5 0 0
+Kd  0.5 0 0
+Ks  0.5 0.5 0.5
+Ns 1
+r 0.5
+d  1
+
+newmtl green
+Ka  0 0.5 0
+Kd  0 0.5 0
+Ks  0.5 0.5 0.5
+Ns 10
+r 0.5
+d  1
+
+newmtl blue
+Ka  0 0 0.5
+Kd  0 0 0.5
+Ks  0.5 0.5 0.5
+Ns 100
+r 0.5
+d  1
+
+# units are watts/nm^2
+newmtl light
+Ka 1.5 1.5 1.5
+Kd 10.0 10.0 10.0
+Ks  2 2 2
+
+
+# Blender MTL File: 'Blue_sphere.blend'
+# Material Count: 1
+newmtl Material.001
+Ns 50
+Ka 0.14 0.42 0.64
+Kd 0.14 0.42 0.64
+Ks 1.00 1.00 1.00
+d 1.000000
+illum 2
+
+newmtl light1
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 1.0 1.0 1.0
+Ns 64
+
+
+newmtl light2
+Ka 0.2 0.2 0.2
+Kd 0.5 0.5 0.5
+Ks 0.5 0.5 0.5
+Ns 64
+
+
+newmtl light3
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 1.0 1.0 1.0
+Ns 64
+
