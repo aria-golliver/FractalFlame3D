@@ -8,6 +8,10 @@
 #include "PointLight.h"
 #include "rdrand.h"
 #include "SurfaceList.h"
+
+#define fractal_points                   100000000
+#define MIN_TREE_SPLIT (fractal_points > 1000000 ? 1000 : 1)
+
 #include "SurfaceListAABB.h"
 #include <vector>
 #include <chrono>
@@ -23,22 +27,10 @@ using namespace std;
 using namespace std::chrono;
 
 Vector3 obj_to_Vector3(const obj_vector* v);
-void createFractal(vector<Surface *> &surfaces);
+void createFractal(vector<const Surface *> &surfaces);
 
 
-int wid = 1080, hei = 1080;
-
-const unsigned int SHADOW_DETAIL = 0;
-const float SHADOW_DIFFUSAL_FACTOR = 1;
-const int MODULATE_SHADOW_Y = 1;
-
-const int REFLECTION_DETAIL = 1;
-const float REFLECTION_DIFFUSAL_FACTOR = 1;
-const unsigned int MAX_REFLECTIONS = 0;
-
-
-float *rng;
-int RNG_BUFF_SIZE = 64;
+int wid = 1000, hei = 1000;
 
 #include "Shader.h"
 
@@ -53,33 +45,23 @@ int main(int argc, char **argv){
 	omp_set_num_threads(num_threads);
 	string filename = "fractals.obj";
 
-	// create the RNG buffer
-	high_resolution_clock::time_point rng_time_start = high_resolution_clock::now();
-	rng = (float *)malloc(RNG_BUFF_SIZE * sizeof(float));
 
-	for (int i = 0; i < RNG_BUFF_SIZE; i++){
-		rdrand_f32(rng + i);
-	}
-
-	high_resolution_clock::time_point rng_time_end = high_resolution_clock::now();
-	duration<double> rng_runtime = duration_cast<duration<double>>(rng_time_end - rng_time_start);
-	printf("time to create rng: %f\n", rng_runtime.count());
-
-
-
-
-
-	// Sphere(posvec, r, avec, dvec, svec, shiny, reflect)
-	// PointLight(posvec, avec, dvec, svec)
-	vector<Surface *> surfaces;
+	vector<const Surface *> surfaces;
 
 	for (int i = 0; i < n_affines; i++)
 		affs[i] = AffineTransform();
 
+
 	createFractal(surfaces);
 
+	high_resolution_clock::time_point surfacelist_time_start = high_resolution_clock::now();
+
 	SurfaceListAABB surfaceList(&surfaces);
-	//surfaceList.print();
+
+	high_resolution_clock::time_point surfacelist_time_end = high_resolution_clock::now();
+	duration<double> surfacelist_runtime = duration_cast<duration<double>>(surfacelist_time_end - surfacelist_time_start);
+	printf("time to create surface tree: %f\n", surfacelist_runtime.count());
+
 	printf("%d %d surfaces total\n", (int)surfaces.size(), (int)surfaceList.size());
 
 	high_resolution_clock::time_point time_start = high_resolution_clock::now();
@@ -119,9 +101,6 @@ int main(int argc, char **argv){
 				fflush(stdout);
 			}
 #endif
-			unsigned int rngindex;
-			rdrand_u32(&rngindex);
-			rngindex = rngindex % (RNG_BUFF_SIZE / 2);
 
 			for (int i = 0; i < wid; i++){
 				Ray ray = camera.castRay(i, j);
@@ -133,11 +112,10 @@ int main(int argc, char **argv){
 				hit.hit = false;
 				hit.t = std::numeric_limits<float>::infinity();
 
-				Surface *nearestSurface = surfaceList.intersectScene(ray, hit);
+				const Surface *nearestSurface = surfaceList.intersectScene(ray, hit);
 
 				if (hit.hit){
-					rngindex = rngindex % RNG_BUFF_SIZE;
-					getTotalLight(hit, nearestSurface, &pointLights, &surfaces, surfaceList, MAX_REFLECTIONS, rngindex, rng);
+					getTotalLight(hit, nearestSurface, &pointLights, &surfaces, surfaceList);
 
 					c = hit.totalLight;
 				}
@@ -189,8 +167,9 @@ Vector3 obj_to_Vector3(obj_vector const* v){
 	return Vector3((float)v->e[0], (float)v->e[1], (float)v->e[2]);
 }
 
-#define fractal_points 1000000
-void createFractal(vector<Surface *> &surfaces){
+void createFractal(vector<const Surface *> &surfaces) {
+	high_resolution_clock::time_point fractal_time_start = high_resolution_clock::now();
+
 #pragma omp parallel for schedule(dynamic)
 	for (int k = 0; k < num_threads; k++) {
 		Vector3 p(0, 0, 0);
@@ -213,13 +192,13 @@ void createFractal(vector<Surface *> &surfaces){
 			col /= 2;
 
 #pragma omp critical
-			surfaces.push_back(new Sphere(
-				Vector3(x, y, z), 0.001f,
-				col,
-				col * 3,
-				col, 10, 0, 0.1));
+			surfaces.push_back(new Sphere(Vector3(x, y, z), 0.001f, col));
 		}
 	}
 
-	printf("%d fractal points generated\n", surfaces.size());
+
+	high_resolution_clock::time_point fractal_time_end = high_resolution_clock::now();
+	duration<double> fractal_runtime = duration_cast<duration<double>>(fractal_time_end - fractal_time_start);
+
+	printf("%d fractal points generated in %f seconds\n", surfaces.size(), fractal_runtime.count());
 }

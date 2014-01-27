@@ -25,10 +25,11 @@ public:
         return false;
     };
     
-    Vector3 mat_ambient, mat_diffuse, mat_specular;
-    float shiny, reflect, alpha;
+    //Vector3 mat_ambient, mat_diffuse, mat_specular;
+    //float shiny, reflect, alpha;
 
 	Vector3 min_point, max_point;
+	Vector3 mat_ambient;
 	//AABBox AABB;
 };
 

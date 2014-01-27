@@ -7,7 +7,7 @@
 
 #define RDRAND_SUCCESS 1
 
-#define FASTRAND
+//#define FASTRAND
 
 #ifdef FASTRAND
 

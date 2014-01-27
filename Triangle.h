@@ -11,18 +11,20 @@ public:
 	Triangle(Vector3 vert1, Vector3 vert2, Vector3 vert3)
     {
         setVerts(vert1, vert2, vert3);
-        this->mat_ambient = this->mat_diffuse = this->mat_specular = Vector3(0, 0, 0);
+        //this->mat_ambient = this->mat_diffuse = this->mat_specular = Vector3(0, 0, 0);
 	}
     
 	Triangle(Vector3 vert1, Vector3 vert2, Vector3 vert3, const Vector3 mat_ambient, const Vector3 mat_diffuse, const Vector3 mat_specular, float shiny, float reflect)
     {
         setVerts(vert1, vert2, vert3);
         
+		/*
         this->mat_ambient = mat_ambient;
         this->mat_diffuse = mat_diffuse;
         this->mat_specular = mat_specular;
         this->shiny = shiny;
         this->reflect = reflect;
+		*/
 	}
 
     void setVerts(Vector3 vert1, Vector3 vert2, Vector3 vert3){

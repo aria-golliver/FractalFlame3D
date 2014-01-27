@@ -8,16 +8,19 @@
 
 class Sphere : public Surface {
 public:
-	Sphere(Vector3 pos, float rad, const Vector3 mat_ambient, const Vector3 mat_diffuse, const Vector3 mat_specular, float shiny, float reflect, float alpha){
+	Sphere(Vector3 pos, float rad, Vector3 mat_ambient){
 		this->pos = pos;
 		this->radius = rad;
 
+		
         this->mat_ambient = mat_ambient;
-        this->mat_diffuse = mat_diffuse;
+		/*
+		this->mat_diffuse = mat_diffuse;
         this->mat_specular = mat_specular;
         this->shiny = shiny;
         this->reflect = reflect;
 		this->alpha = alpha;
+		*/
 		this->min_point = pos - rad;
 		this->max_point = pos + rad;
 	}
