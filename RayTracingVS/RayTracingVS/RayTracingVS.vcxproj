@@ -50,6 +50,7 @@
     <PlatformToolset>Intel C++ Compiler XE 14.0</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <NumberOfCilkThreads>2</NumberOfCilkThreads>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -78,7 +79,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <ProfileDirectory>C:\Users\Aaron\Desktop\csse451-1314b-gollivam\RayTracingVS\RayTracingVS</ProfileDirectory>
+    <ProfileDirectory>C:\Users\Aaron\Documents\GitHub\FractalFlame3D\RayTracingVS\RayTracingVS</ProfileDirectory>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

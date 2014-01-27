@@ -9,8 +9,8 @@
 #include "rdrand.h"
 #include "SurfaceList.h"
 
-#define fractal_points                   100000000
-#define MIN_TREE_SPLIT (fractal_points > 1000000 ? 1000 : 1)
+#define fractal_points  50000000
+#define MIN_TREE_SPLIT (1)
 
 #include "SurfaceListAABB.h"
 #include <vector>
@@ -30,17 +30,17 @@ Vector3 obj_to_Vector3(const obj_vector* v);
 void createFractal(vector<const Surface *> &surfaces);
 
 
-int wid = 1000, hei = 1000;
+int wid = 1920, hei = 1080;
 
 #include "Shader.h"
 
-const int num_threads = 8;
+const int num_threads = 12;
 
 #define n_affines 6
 AffineTransform affs[n_affines];
 
 int main(int argc, char **argv){
-	//srand(time(NULL));
+	srand(time(NULL));
 	printf("THIS MUST BE RUN ON AN IVY BRIDGE CPU OR BETTER!!!\n");
 	omp_set_num_threads(num_threads);
 	string filename = "fractals.obj";
@@ -171,10 +171,10 @@ void createFractal(vector<const Surface *> &surfaces) {
 	high_resolution_clock::time_point fractal_time_start = high_resolution_clock::now();
 
 #pragma omp parallel for schedule(dynamic)
-	for (int k = 0; k < num_threads; k++) {
+	for (int k = 0; k < num_threads * 10; k++) {
 		Vector3 p(0, 0, 0);
 		Vector3 col(0, 0, 0);
-		for (int i = 0; i < fractal_points / num_threads; i++){
+		for (int i = 0; i < fractal_points / num_threads / 10; i++){
 			unsigned int idx;
 			rdrand_u32(&idx);
 			idx %= n_affines;

@@ -1,90 +1,482 @@
-<html><head><META HTTP-EQUIV="Content-Type" content="text/html; charset=utf-16"></head><body><pre><pre><table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>Instrumentation</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Instrumenting project 'RayTracingVS'...
-1>------ Build started: Project: RayTracingVS, Configuration: Release x64 ------
-1>icl : message #10346: optimization reporting will be enabled at link time when performing interprocedural optimizations
-1>icl : warning #10187: PGOPTI instrumentation disables multifile optimizations
-1>icl : warning #10188: PGOPTI instrumentation disables IP optimizations
-1>  list.cpp
-1>  objLoader.cpp
-1>  obj_parser.cpp
-1>  raytracer.cpp
-1>  simplePPM.cpp
-1>  xilink: executing 'link'
-1>  RayTracingVS.vcxproj -> C:\Users\Aaron\Desktop\csse451-1314b-gollivam\RayTracingVS\x64\Release\RayTracingVS.exe
-</pre></table><pre><table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>Run Application(s)</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Executing 'C:\Users\Aaron\Desktop\csse451-1314b-gollivam\RayTracingVS\x64\Release\RayTracingVS.exe'
-</pre></table><pre><table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>Optimization</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Optimizing project 'RayTracingVS'...
-1>------ Build started: Project: RayTracingVS, Configuration: Release x64 ------
+<html><head><META HTTP-EQUIV="Content-Type" content="text/html; charset=utf-16"></head><body><pre><pre><table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>Instrumentation</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Instrumenting project 'Fractals'...
+1>------ Build started: Project: Fractals, Configuration: Release x64 ------
 1>icl : message #10346: optimization reporting will be enabled at link time when performing interprocedural optimizations
 1>icl : warning #10301: function ordering and/or data ordering disables multifile optimizations
-1>  warning #30005: Existing C:\Users\Aaron\Desktop\csse451-1314b-gollivam\RayTracingVS\RayTracingVS\pgopti.dpi will be overwritten.
-1>  warning #30005: Existing C:\Users\Aaron\Desktop\csse451-1314b-gollivam\RayTracingVS\RayTracingVS\pgopti.dpi will be overwritten.
-1>  1. block count = 300, 2. block count = 307
-1>  1. block count = 10, 2. block count = 7
 1>  list.cpp
-1>C:\USERS\AARON\DESKTOP\CSSE451-1314B-GOLLIVAM\LIST.CPP(71): message #11505: No .dpi information for ?list_print_items@@YAPEADPEAUlist@@@Z: computing static profile
-1>C:\USERS\AARON\DESKTOP\CSSE451-1314B-GOLLIVAM\LIST.CPP(83): message #11505: No .dpi information for ?list_get_index@@YAPEAXPEAUlist@@H@Z: computing static profile
-1>C:\USERS\AARON\DESKTOP\CSSE451-1314B-GOLLIVAM\LIST.CPP(90): message #11505: No .dpi information for ?list_get_item@@YAPEAXPEAUlist@@PEAX@Z: computing static profile
-1>C:\USERS\AARON\DESKTOP\CSSE451-1314B-GOLLIVAM\LIST.CPP(103): message #11505: No .dpi information for ?list_get_name@@YAPEAXPEAUlist@@PEAD@Z: computing static profile
-1>C:\USERS\AARON\DESKTOP\CSSE451-1314B-GOLLIVAM\LIST.CPP(129): message #11505: No .dpi information for ?list_delete_item@@YAXPEAUlist@@PEAX@Z: computing static profile
-1>C:\USERS\AARON\DESKTOP\CSSE451-1314B-GOLLIVAM\LIST.CPP(140): message #11505: No .dpi information for ?list_delete_name@@YAXPEAUlist@@PEAD@Z: computing static profile
-1>C:\USERS\AARON\DESKTOP\CSSE451-1314B-GOLLIVAM\LIST.CPP(196): message #11505: No .dpi information for ?list_print_list@@YAXPEAUlist@@@Z: computing static profile
-1>..\..\list.cpp : message #11503: Total routines 15, routines w/o profile info: 7
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(8): message #11505: No .dpi information for ?list_is_full@@YADPEAUlist@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(13): message #11505: No .dpi information for ?list_grow@@YAXPEAUlist@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(34): message #11505: No .dpi information for ?list_make@@YAXPEAUlist@@HD@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(43): message #11505: No .dpi information for ?list_add_item@@YAHPEAUlist@@PEAXPEAD@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(71): message #11505: No .dpi information for ?list_print_items@@YAPEADPEAUlist@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(83): message #11505: No .dpi information for ?list_get_index@@YAPEAXPEAUlist@@H@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(90): message #11505: No .dpi information for ?list_get_item@@YAPEAXPEAUlist@@PEAX@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(103): message #11505: No .dpi information for ?list_get_name@@YAPEAXPEAUlist@@PEAD@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(116): message #11505: No .dpi information for ?list_find@@YAHPEAUlist@@PEAD@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(129): message #11505: No .dpi information for ?list_delete_item@@YAXPEAUlist@@PEAX@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(140): message #11505: No .dpi information for ?list_delete_name@@YAXPEAUlist@@PEAD@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(161): message #11505: No .dpi information for ?list_delete_index@@YAXPEAUlist@@H@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(181): message #11505: No .dpi information for ?list_delete_all@@YAXPEAUlist@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(189): message #11505: No .dpi information for ?list_free@@YAXPEAUlist@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(196): message #11505: No .dpi information for ?list_print_list@@YAXPEAUlist@@@Z: computing static profile
+1>..\..\list.cpp : message #11503: Total routines 15, routines w/o profile info: 15
 1>  objLoader.cpp
 1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\NEW(64): message #11505: No .dpi information for ??3@YAXPEAX0@Z: computing static profile
 1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(1334): message #11505: No .dpi information for ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@_K@Z: computing static profile
 1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(1342): message #11505: No .dpi information for ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@_K0@Z: computing static profile
 1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(2289): message #11505: No .dpi information for ?_Xlen@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAXXZ: computing static profile
 1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(2294): message #11505: No .dpi information for ?_Xran@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAXXZ: computing static profile
-1>..\..\objLoader.cpp : message #11503: Total routines 47, routines w/o profile info: 5
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJLOADER.CPP(7): message #11505: No .dpi information for ?load@objLoader@@QEAAHV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z: computing static profile
+1>..\..\objLoader.cpp : message #11503: Total routines 47, routines w/o profile info: 6
 1>  obj_parser.cpp
 1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\NEW(64): message #11505: No .dpi information for ??3@YAXPEAX0@Z: computing static profile
 1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(1334): message #11505: No .dpi information for ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@_K@Z: computing static profile
 1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(1342): message #11505: No .dpi information for ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@_K0@Z: computing static profile
 1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(2289): message #11505: No .dpi information for ?_Xlen@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAXXZ: computing static profile
 1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(2294): message #11505: No .dpi information for ?_Xran@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAXXZ: computing static profile
-1>C:\USERS\AARON\DESKTOP\CSSE451-1314B-GOLLIVAM\OBJ_PARSER.CPP(123): message #11505: No .dpi information for ?obj_parse_plane@@YAPEAUobj_plane@@PEAUobj_growable_scene_data@@@Z: computing static profile
-1>C:\USERS\AARON\DESKTOP\CSSE451-1314B-GOLLIVAM\OBJ_PARSER.CPP(144): message #11505: No .dpi information for ?obj_parse_light_quad@@YAPEAUobj_light_quad@@PEAUobj_growable_scene_data@@@Z: computing static profile
-1>C:\USERS\AARON\DESKTOP\CSSE451-1314B-GOLLIVAM\OBJ_PARSER.CPP(153): message #11505: No .dpi information for ?obj_parse_light_disc@@YAPEAUobj_light_disc@@PEAUobj_growable_scene_data@@@Z: computing static profile
-1>..\..\obj_parser.cpp : message #11503: Total routines 68, routines w/o profile info: 8
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(13): message #11505: No .dpi information for ?obj_free_half_list@@YAXPEAUlist@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(19): message #11505: No .dpi information for ?obj_convert_to_list_index@@YAHHH@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(30): message #11505: No .dpi information for ?obj_convert_to_list_index_v@@YAXHPEAH@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(36): message #11505: No .dpi information for ?obj_set_material_defaults@@YAXPEAUobj_material@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(55): message #11505: No .dpi information for ?obj_parse_vertex_index@@YAHPEAH00@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(95): message #11505: No .dpi information for ?obj_parse_face@@YAPEAUobj_face@@PEAUobj_growable_scene_data@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(109): message #11505: No .dpi information for ?obj_parse_sphere@@YAPEAUobj_sphere@@PEAUobj_growable_scene_data@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(123): message #11505: No .dpi information for ?obj_parse_plane@@YAPEAUobj_plane@@PEAUobj_growable_scene_data@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(137): message #11505: No .dpi information for ?obj_parse_light_point@@YAPEAUobj_light_point@@PEAUobj_growable_scene_data@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(144): message #11505: No .dpi information for ?obj_parse_light_quad@@YAPEAUobj_light_quad@@PEAUobj_growable_scene_data@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(153): message #11505: No .dpi information for ?obj_parse_light_disc@@YAPEAUobj_light_disc@@PEAUobj_growable_scene_data@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(165): message #11505: No .dpi information for ?obj_parse_vector@@YAPEAUobj_vector@@XZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(183): message #11505: No .dpi information for ?obj_parse_camera@@YAXPEAUobj_growable_scene_data@@PEAUobj_camera@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(192): message #11505: No .dpi information for ?obj_parse_mtl_file@@YAHPEADPEAUlist@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(304): message #11505: No .dpi information for ?obj_parse_obj_file@@YAHPEAUobj_growable_scene_data@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(442): message #11505: No .dpi information for ?obj_init_temp_storage@@YAXPEAUobj_growable_scene_data@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(461): message #11505: No .dpi information for ?obj_free_temp_storage@@YAXPEAUobj_growable_scene_data@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(478): message #11505: No .dpi information for ?delete_obj_data@@YAXPEAUobj_scene_data@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(519): message #11505: No .dpi information for ?obj_copy_to_out_storage@@YAXPEAUobj_scene_data@@PEAUobj_growable_scene_data@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(552): message #11505: No .dpi information for ?parse_obj_scene@@YAHPEAUobj_scene_data@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z: computing static profile
+1>..\..\obj_parser.cpp : message #11503: Total routines 68, routines w/o profile info: 25
 1>  raytracer.cpp
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\MATH.H(1052): message #11505: No .dpi information for ?cos@@YAMM@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\MATH.H(1132): message #11505: No .dpi information for ?sin@@YAMM@Z: computing static profile
 1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\NEW(64): message #11505: No .dpi information for ??3@YAXPEAX0@Z: computing static profile
-1>C:\USERS\AARON\DESKTOP\CSSE451-1314B-GOLLIVAM\GENVECTOR.H(132): message #11505: No .dpi information for ??H?$GenVector@$02M$0A@@@QEBA?AV0@M@Z: computing static profile
-1>C:\USERS\AARON\DESKTOP\CSSE451-1314B-GOLLIVAM\GENVECTOR.H(140): message #11505: No .dpi information for ??G?$GenVector@$02M$0A@@@QEBA?AV0@M@Z: computing static profile
-1>C:\USERS\AARON\DESKTOP\CSSE451-1314B-GOLLIVAM\SURFACE.H(17): message #11505: No .dpi information for ?hit@Surface@@UEBA?AUHitVector@@AEBVRay@@@Z: computing static profile
-1>C:\USERS\AARON\DESKTOP\CSSE451-1314B-GOLLIVAM\SURFACE.H(24): message #11505: No .dpi information for ?hit_test@Surface@@UEBAMAEBVRay@@@Z: computing static profile
-1>C:\USERS\AARON\DESKTOP\CSSE451-1314B-GOLLIVAM\SPHERE.H(11): warning #11506: Profile information will be ignored for '??0Sphere@@QEAA@V?$GenVector@$02M$0A@@@MV1@11MM@Z':
-1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(1013): message #11505: No .dpi information for ??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV01@PEBD@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(453): message #11505: No .dpi information for ??$?K$02M$0A@@@YA?AV?$GenVector@$02M$0A@@@MAEBV0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(438): message #11505: No .dpi information for ??$?D$02M$0A@@@YA?AV?$GenVector@$02M$0A@@@MAEBV0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\RDRAND.H(53): message #11505: No .dpi information for ?rdrand_f32@@YAXPEAM@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\RDRAND.H(56): message #11505: No .dpi information for ?rdrand_u32@@YAXPEAI@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\BUFFER.H(8): message #11505: No .dpi information for ??0Buffer@@QEAA@II@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\BUFFER.H(19): message #11505: No .dpi information for ?at@Buffer@@QEAAAEAV?$GenVector@$02E$0A@@@II@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\BUFFER.H(26): message #11505: No .dpi information for ?alloc@Buffer@@AEAAXXZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(78): message #11505: No .dpi information for ??0?$GenVector@$02E$0A@@@QEAA@EEE@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(222): message #11505: No .dpi information for ??4?$GenVector@$02E$0A@@@QEAAAEAV0@AEBV0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\BUFFER.H(37): message #11505: No .dpi information for ??0LightBuffer@@QEAA@II@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\BUFFER.H(48): message #11505: No .dpi information for ?at@LightBuffer@@QEAAAEAV?$GenVector@$02M$0A@@@II@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\BUFFER.H(56): message #11505: No .dpi information for ?alloc@LightBuffer@@AEAAXXZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(49): message #11505: No .dpi information for ??0?$GenVector@$02M$0A@@@QEAA@XZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(57): message #11505: No .dpi information for ??0?$GenVector@$02M$0A@@@QEAA@AEBV0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(78): message #11505: No .dpi information for ??0?$GenVector@$02M$0A@@@QEAA@MMM@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(102): message #11505: No .dpi information for ??H?$GenVector@$02M$0A@@@QEBA?AV0@AEBV0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(110): message #11505: No .dpi information for ??G?$GenVector@$02M$0A@@@QEBA?AV0@AEBV0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(118): message #11505: No .dpi information for ??D?$GenVector@$02M$0A@@@QEBA?AV0@AEBV0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(134): message #11505: No .dpi information for ??H?$GenVector@$02M$0A@@@QEBA?AV0@M@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(142): message #11505: No .dpi information for ??G?$GenVector@$02M$0A@@@QEBA?AV0@M@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(150): message #11505: No .dpi information for ??D?$GenVector@$02M$0A@@@QEBA?AV0@M@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(166): message #11505: No .dpi information for ??Y?$GenVector@$02M$0A@@@QEAAAEAV0@AEBV0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(215): message #11505: No .dpi information for ??_0?$GenVector@$02M$0A@@@QEAAAEAV0@M@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(222): message #11505: No .dpi information for ??4?$GenVector@$02M$0A@@@QEAAAEAV0@AEBV0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(265): message #11505: No .dpi information for ??G?$GenVector@$02M$0A@@@QEBA?AV0@XZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(273): message #11505: No .dpi information for ??A?$GenVector@$02M$0A@@@QEBAMH@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(278): message #11505: No .dpi information for ??A?$GenVector@$02M$0A@@@QEAAAEAMH@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(283): message #11505: No .dpi information for ??R?$GenVector@$02M$0A@@@QEBAMH@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(303): message #11505: No .dpi information for ?dot@?$GenVector@$02M$0A@@@QEBAMAEBV1@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(311): message #11505: No .dpi information for ?cross@?$GenVector@$02M$0A@@@QEBA?AV1@AEBV1@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(329): message #11505: No .dpi information for ?squaredLength@?$GenVector@$02M$0A@@@QEBAMXZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(345): message #11505: No .dpi information for ?length@?$GenVector@$02M$0A@@@QEBAMXZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(350): message #11505: No .dpi information for ?normalize@?$GenVector@$02M$0A@@@QEAAAEAV1@XZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\RAY.H(11): message #11505: No .dpi information for ??0Ray@@QEAA@XZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\RAY.H(17): message #11505: No .dpi information for ??0Ray@@QEAA@V?$GenVector@$02M$0A@@@0@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\RAY.H(24): message #11505: No .dpi information for ??4Ray@@QEAAAEAV0@AEBV0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\CAMERA.H(22): message #11505: No .dpi information for ??0Camera@@QEAA@HH@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\CAMERA.H(24): message #11505: No .dpi information for ?setBasis@Camera@@QEAAXV?$GenVector@$02M$0A@@@0V2@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\CAMERA.H(42): message #11505: No .dpi information for ?castRay@Camera@@QEBA?AVRay@@HH@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\AABBOX.H(11): message #11505: No .dpi information for ??0AABBox@@QEAA@XZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\AABBOX.H(16): message #11505: No .dpi information for ??0AABBox@@QEAA@V?$GenVector@$02M$0A@@@0@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\AABBOX.H(27): message #11505: No .dpi information for ?hit_test@AABBox@@UEBAMAEBVRay@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\AABBOX.H(9): message #11505: No .dpi information for ??4AABBox@@QEAAAEAV0@AEBV0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\HITVECTOR.H(8): message #11505: No .dpi information for ??0HitVector@@QEAA@XZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\HITVECTOR.H(8): message #11505: No .dpi information for ??4HitVector@@QEAAAEAU0@AEBU0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\POINTLIGHT.H(14): message #11505: No .dpi information for ??0PointLight@@QEAA@V?$GenVector@$02M$0A@@@000@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACE.H(17): message #11505: No .dpi information for ?hit@Surface@@UEBA?AUHitVector@@AEBVRay@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACE.H(24): message #11505: No .dpi information for ?hit_test@Surface@@UEBAMAEBVRay@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACE.H(11): message #11505: No .dpi information for ??0Surface@@QEAA@XZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SPHERE.H(11): message #11505: No .dpi information for ??0Sphere@@QEAA@V?$GenVector@$02M$0A@@@M0@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SPHERE.H(34): message #11505: No .dpi information for ?hit_test@Sphere@@UEBAMAEBVRay@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SPHERE.H(57): message #11505: No .dpi information for ?hit@Sphere@@UEBA?AUHitVector@@AEBVRay@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SPHERE.H(85): message #11505: No .dpi information for ?normalAt@Sphere@@QEBA?AV?$GenVector@$02M$0A@@@V2@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELIST.H(18): message #11505: No .dpi information for ??0SurfaceList@@QEAA@XZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELIST.H(20): message #11505: No .dpi information for ??0SurfaceList@@QEAA@PEBV?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELIST.H(45): message #11505: No .dpi information for ?intersectScene@SurfaceList@@UEBAPEBVSurface@@AEBVRay@@AEAUHitVector@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELIST.H(67): message #11505: No .dpi information for ?intersectScene_max@SurfaceList@@UEBA_NAEBVRay@@M@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELIST.H(78): message #11505: No .dpi information for ?size@SurfaceList@@UEBAHXZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELIST.H(82): message #11505: No .dpi information for ?print@SurfaceList@@UEAAXXZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELISTAABB.H(27): message #11505: No .dpi information for ?factory@SurfaceListAABB@@QEBAPEAV1@PEBV?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELISTAABB.H(31): message #11505: No .dpi information for ??0SurfaceListAABB@@QEAA@PEBV?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELISTAABB.H(237): message #11505: No .dpi information for ?intersectScene@SurfaceListAABB@@UEBAPEBVSurface@@AEBVRay@@AEAUHitVector@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELISTAABB.H(306): message #11505: No .dpi information for ?intersectScene_max@SurfaceListAABB@@UEBA_NAEBVRay@@M@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELISTAABB.H(332): message #11505: No .dpi information for ?size@SurfaceListAABB@@UEBAHXZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELISTAABB.H(347): message #11505: No .dpi information for ?print@SurfaceListAABB@@UEAAXXZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\AFFINETRANSFORM.H(8): message #11505: No .dpi information for ??0AffineTransform@@QEAA@XZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\AFFINETRANSFORM.H(44): message #11505: No .dpi information for ?apply@AffineTransform@@QEBA?AV?$GenVector@$02M$0A@@@AEBV2@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\AFFINETRANSFORM.H(5): message #11505: No .dpi information for ??4AffineTransform@@QEAAAEAV0@AEBV0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELISTAABB.H(185): message #11505: No .dpi information for ??R__cilk_spawn_1@?DC@???0SurfaceListAABB@@QEAA@PEBV?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@@Z@__N_19_______raytracer_cpp_a188f1ea@@QEBAXXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(1038): message #11505: No .dpi information for ?append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@AEBV12@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(1044): message #11505: No .dpi information for ?append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@AEBV12@_K1@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(1334): message #11505: No .dpi information for ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@_K@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(1342): message #11505: No .dpi information for ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@_K0@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(1777): message #11505: No .dpi information for ?capacity@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_KXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(2289): message #11505: No .dpi information for ?_Xlen@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAXXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(2294): message #11505: No .dpi information for ?_Xran@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAXXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(532): message #11505: No .dpi information for ?select_on_container_copy_construction@?$allocator@PEBVSurface@@@std@@QEBA?AV12@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(553): message #11505: No .dpi information for ??0?$allocator@PEBVSurface@@@std@@QEAA@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(557): message #11505: No .dpi information for ??0?$allocator@PEBVSurface@@@std@@QEAA@AEBV01@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(572): message #11505: No .dpi information for ?deallocate@?$allocator@PEBVSurface@@@std@@QEAAXPEAPEBVSurface@@_K@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(577): message #11505: No .dpi information for ?allocate@?$allocator@PEBVSurface@@@std@@QEAAPEAPEBVSurface@@_K@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(592): message #11505: No .dpi information for ?construct@?$allocator@PEBVSurface@@@std@@QEAAXPEAPEBVSurface@@AEBQEBV3@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(611): message #11505: No .dpi information for ?max_size@?$allocator@PEBVSurface@@@std@@QEBA_KXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(599): message #11505: No .dpi information for ??$construct@PEBVSurface@@PEBV1@@?$allocator@PEBVSurface@@@std@@QEAAXPEAPEBVSurface@@$$QEAPEBV2@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(599): message #11505: No .dpi information for ??$construct@PEBVSurface@@AEAPEBV1@@?$allocator@PEBVSurface@@@std@@QEAAXPEAPEBVSurface@@AEAPEBV2@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(734): message #11505: No .dpi information for ?max_size@?$allocator_traits@V?$allocator@PEBVSurface@@@std@@@std@@SA_KAEBV?$allocator@PEBVSurface@@@2@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(740): message #11505: No .dpi information for ?select_on_container_copy_construction@?$allocator_traits@V?$allocator@PEBVSurface@@@std@@@std@@SA?AV?$allocator@PEBVSurface@@@2@AEBV32@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(722): message #11505: No .dpi information for ??$construct@PEBVSurface@@PEBV1@@?$allocator_traits@V?$allocator@PEBVSurface@@@std@@@std@@SAXAEAV?$allocator@PEBVSurface@@@1@PEAPEBVSurface@@$$QEAPEBV3@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(722): message #11505: No .dpi information for ??$construct@PEBVSurface@@AEAPEBV1@@?$allocator_traits@V?$allocator@PEBVSurface@@@std@@@std@@SAXAEAV?$allocator@PEBVSurface@@@1@PEAPEBVSurface@@AEAPEBV3@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(722): message #11505: No .dpi information for ??$construct@PEBVSurface@@AEBQEBV1@@?$allocator_traits@V?$allocator@PEBVSurface@@@std@@@std@@SAXAEAV?$allocator@PEBVSurface@@@1@PEAPEBVSurface@@AEBQEBV3@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(778): message #11505: No .dpi information for ?select_on_container_copy_construction@?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@QEBA?AU12@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(801): message #11505: No .dpi information for ??0?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@QEAA@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(806): message #11505: No .dpi information for ??0?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@QEAA@AEBV?$allocator@PEBVSurface@@@1@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(846): message #11505: No .dpi information for ?allocate@?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@QEAAPEAPEBVSurface@@_K@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(857): message #11505: No .dpi information for ?deallocate@?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@QEAAXPEAPEBVSurface@@_K@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(883): message #11505: No .dpi information for ?max_size@?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@QEBA_KXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(870): message #11505: No .dpi information for ??$construct@PEBVSurface@@PEBV1@@?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@QEAAXPEAPEBVSurface@@$$QEAPEBV2@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(870): message #11505: No .dpi information for ??$construct@PEBVSurface@@AEAPEBV1@@?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@QEAAXPEAPEBVSurface@@AEAPEBV2@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(870): message #11505: No .dpi information for ??$construct@PEBVSurface@@AEBQEBV1@@?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@QEAAXPEAPEBVSurface@@AEBQEBV2@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(481): message #11505: No .dpi information for ??0?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@QEAA@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(589): message #11505: No .dpi information for ??0?$_Vector_alloc@$0A@U?$_Vec_base_types@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@@std@@QEAA@AEBV?$allocator@PEBVSurface@@@1@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(641): message #11505: No .dpi information for ?_Getal@?$_Vector_alloc@$0A@U?$_Vec_base_types@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@@std@@QEBA?AU?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@2@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(680): message #11505: No .dpi information for ??0?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEAA@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(721): message #11505: No .dpi information for ??0?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEAA@AEBV01@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(865): message #11505: No .dpi information for ?push_back@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEAAX$$QEAPEBVSurface@@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(944): message #11505: No .dpi information for ??1?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEAA@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1009): message #11505: No .dpi information for ?capacity@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEBA_KXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1014): message #11505: No .dpi information for ?_Unused_capacity@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEBA_KXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1029): message #11505: No .dpi information for ?begin@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEBA?AV?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@2@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1039): message #11505: No .dpi information for ?end@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEBA?AV?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@2@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1147): message #11505: No .dpi information for ?size@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEBA_KXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1152): message #11505: No .dpi information for ?max_size@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEBA_KXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1167): message #11505: No .dpi information for ?at@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEBAAEBQEBVSurface@@_K@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1174): message #11505: No .dpi information for ?at@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEAAAEAPEBVSurface@@_K@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1243): message #11505: No .dpi information for ?push_back@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEAAXAEBQEBVSurface@@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1507): message #11505: No .dpi information for ?clear@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEAAXXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1546): message #11505: No .dpi information for ?_Buy@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@IEAA_N_K@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1565): message #11505: No .dpi information for ?_Destroy@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@IEAAXPEAPEBVSurface@@0@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1571): message #11505: No .dpi information for ?_Grow_to@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@IEBA_K_K@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1582): message #11505: No .dpi information for ?_Inside@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@IEBA_NPEBQEBVSurface@@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1587): message #11505: No .dpi information for ?_Reallocate@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@IEAAX_K@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1612): message #11505: No .dpi information for ?_Reserve@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@IEAAX_K@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1622): message #11505: No .dpi information for ?_Tidy@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@IEAAXXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1753): message #11505: No .dpi information for ?_Xlen@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@IEBAXXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1758): message #11505: No .dpi information for ?_Xran@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@IEBAXXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1780): message #11505: No .dpi information for ?_Orphan_range@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@IEBAXPEAPEBVSurface@@0@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1637): message #11505: No .dpi information for ??$_Ucopy@V?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@std@@@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@IEAAPEAPEBVSurface@@V?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@1@0PEAPEBV2@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1645): message #11505: No .dpi information for ??$_Umove@PEAPEBVSurface@@@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@IEAAPEAPEBVSurface@@PEAPEBV2@00@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(47): message #11505: No .dpi information for ??0?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@std@@QEAA@PEAPEBVSurface@@PEBU_Container_base0@1@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(60): message #11505: No .dpi information for ?_Unchecked@?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@std@@QEBAPEBQEBVSurface@@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(65): message #11505: No .dpi information for ??D?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@std@@QEBAAEBQEBVSurface@@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(95): message #11505: No .dpi information for ??E?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@std@@QEAAAEAV01@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(203): message #11505: No .dpi information for ??8?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@std@@QEBA_NAEBV01@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(209): message #11505: No .dpi information for ??9?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@std@@QEBA_NAEBV01@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(254): message #11505: No .dpi information for ?_Compat@?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@std@@QEBAXAEBV12@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1753): message #11505: No .dpi information for ?_Xlen@?$vector@PEAVPointLight@@V?$allocator@PEAVPointLight@@@std@@@std@@IEBAXXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(2414): message #11505: No .dpi information for ??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@$$QEAV10@0@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(22): message #11505: No .dpi information for ??$_Allocate@PEBVSurface@@@std@@YAPEAPEBVSurface@@_KPEAPEBV1@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY(424): message #11505: No .dpi information for ??$_Uninitialized_copy@V?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@std@@PEAPEBVSurface@@U?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@2@@std@@YAPEAPEBVSurface@@V?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@0@0PEAPEBV1@AEAU?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@0@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(264): message #11505: No .dpi information for ??$_Unchecked@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@std@@YAPEBQEBVSurface@@V?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@0@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XUTILITY(280): message #11505: No .dpi information for ??$_Unchecked@PEAPEBVSurface@@@std@@YAPEAPEBVSurface@@PEAPEBV1@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY(414): message #11505: No .dpi information for ??$_Uninit_copy@PEBQEBVSurface@@PEAPEBV1@U?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@@std@@YAPEAPEBVSurface@@PEBQEBV1@0PEAPEBV1@AEAU?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@0@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XUTILITY(453): message #11505: No .dpi information for ??$_Ptr_cat@PEBVSurface@@PEBV1@@std@@YA?AU_Scalar_ptr_iterator_tag@0@PEBQEBVSurface@@PEAPEBV2@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY(401): message #11505: No .dpi information for ??$_Uninit_copy@QEBVSurface@@PEBV1@@std@@YAPEAPEBVSurface@@PEBQEBV1@0PEAPEBV1@AEAU?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@0@U_Scalar_ptr_iterator_tag@0@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XUTILITY(288): message #11505: No .dpi information for ??$_Rechecked@PEAPEBVSurface@@PEAPEBV1@@std@@YAAEAPEAPEBVSurface@@AEAPEAPEBV1@PEAPEBV1@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(95): message #11505: No .dpi information for ??$_Destroy_range@U?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@@std@@YAXPEAPEBVSurface@@0AEAU?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@0@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XUTILITY(444): message #11505: No .dpi information for ??$_Ptr_cat@PEBVSurface@@PEBV1@@std@@YA?AU_Scalar_ptr_iterator_tag@0@PEAPEBVSurface@@0@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(89): message #11505: No .dpi information for ??$_Destroy_range@U?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@@std@@YAXPEAPEBVSurface@@0AEAU?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@0@U_Scalar_ptr_iterator_tag@0@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTDDEF(92): message #11505: No .dpi information for ??$addressof@PEBVSurface@@@std@@YAPEAPEBVSurface@@AEAPEBV1@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY(492): message #11505: No .dpi information for ??$_Uninitialized_move@PEAPEBVSurface@@PEAPEBV1@U?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@@std@@YAPEAPEBVSurface@@PEAPEBV1@00AEAU?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@0@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY(482): message #11505: No .dpi information for ??$_Uninit_move@PEAPEBVSurface@@PEAPEBV1@U?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@@std@@YAPEAPEBVSurface@@PEAPEBV1@00AEAU?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@0@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XUTILITY(645): message #11505: No .dpi information for ??$_Val_type@PEAPEBVSurface@@@std@@YAPEAPEBVSurface@@PEAPEBV1@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY(469): message #11505: No .dpi information for ??$_Uninit_move@PEBVSurface@@PEBV1@PEBV1@@std@@YAPEAPEBVSurface@@PEAPEBV1@00AEAU?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@0@0U_Scalar_ptr_iterator_tag@0@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\TYPE_TRAITS(1504): message #11505: No .dpi information for ??$forward@PEBVSurface@@@std@@YA$$QEAPEBVSurface@@AEAPEBV1@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTDDEF(92): message #11505: No .dpi information for ??$addressof@QEBVSurface@@@std@@YAPEBQEBVSurface@@AEBQEBV1@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\TYPE_TRAITS(1504): message #11505: No .dpi information for ??$forward@AEAPEBVSurface@@@std@@YAAEAPEBVSurface@@AEAPEBV1@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\TYPE_TRAITS(1504): message #11505: No .dpi information for ??$forward@AEBQEBVSurface@@@std@@YAAEBQEBVSurface@@AEBQEBV1@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\RAYTRACER.CPP : message #11505: No .dpi information for ??_HAffineTransform@@QEAAPEAV0@H@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SHADER.H(17): message #11505: No .dpi information for ?getTotalLight@@YAXAEAUHitVector@@PEBVSurface@@PEBV?$vector@PEAVPointLight@@V?$allocator@PEAVPointLight@@@std@@@std@@PEBV?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@4@AEBVSurfaceListAABB@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\RAYTRACER.CPP(42): message #11505: No .dpi information for main: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\RAYTRACER.CPP(166): message #11505: No .dpi information for ?obj_to_Vector3@@YA?AV?$GenVector@$02M$0A@@@PEBUobj_vector@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\RAYTRACER.CPP(170): message #11505: No .dpi information for ?createFractal@@YAXAEAV?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\RAYTRACER.CPP : message #11505: No .dpi information for __sti__?affs@@3PAVAffineTransform@@A: computing static profile
+1>..\..\raytracer.cpp : message #11503: Total routines 281, routines w/o profile info: 166
+1>  simplePPM.cpp
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SIMPLEPPM.CPP(7): message #11505: No .dpi information for ?simplePPM__getFirstIntChar@@YAEPEAU_iobuf@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SIMPLEPPM.CPP(25): message #11505: No .dpi information for ?simplePPM__getuint@@YAIPEAU_iobuf@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SIMPLEPPM.CPP(53): message #11505: No .dpi information for ?simplePPM__sfopen@@YAPEAU_iobuf@@PEBD0@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SIMPLEPPM.CPP(67): message #11505: No .dpi information for ?simplePPM_write_ppm@@YAHPEBDIIPEBE@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SIMPLEPPM.CPP(78): message #11505: No .dpi information for ?simplePPM_read_ppm@@YAPEAEPEBDPEAI1@Z: computing static profile
+1>..\..\simplePPM.cpp : message #11503: Total routines 5, routines w/o profile info: 5
+1>  string_extra.cpp
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\STRING_EXTRA.CPP(5): message #11505: No .dpi information for ?strequal@@YADPEBD0@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\STRING_EXTRA.CPP(12): message #11505: No .dpi information for ?contains@@YADPEBD0@Z: computing static profile
+1>..\..\string_extra.cpp : message #11503: Total routines 2, routines w/o profile info: 2
+1>C:\Users\Aaron\Documents\GitHub\FractalFlame3D\GenVector.h(216): message : LOOP WAS VECTORIZED
+1>C:\Users\Aaron\Documents\GitHub\FractalFlame3D\AffineTransform.h(5): message : BLOCK WAS VECTORIZED
+1>C:\Users\Aaron\Documents\GitHub\FractalFlame3D\AffineTransform.h(21): message : BLOCK WAS VECTORIZED
+1>  xilink: executing 'link'
+1>  RayTracingVS.vcxproj -> C:\Users\Aaron\Documents\GitHub\FractalFlame3D\RayTracingVS\x64\Release\Fractals.exe
+</pre></table><pre><table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>Run Application(s)</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Executing 'C:\Users\Aaron\Documents\GitHub\FractalFlame3D\RayTracingVS\x64\Release\Fractals.exe'
+</pre></table><pre><table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>Optimization</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Optimizing project 'Fractals'...
+1>------ Build started: Project: Fractals, Configuration: Release x64 ------
+1>icl : message #10346: optimization reporting will be enabled at link time when performing interprocedural optimizations
+1>icl : warning #10301: function ordering and/or data ordering disables multifile optimizations
+1>  list.cpp
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(8): message #11505: No .dpi information for ?list_is_full@@YADPEAUlist@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(13): message #11505: No .dpi information for ?list_grow@@YAXPEAUlist@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(34): message #11505: No .dpi information for ?list_make@@YAXPEAUlist@@HD@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(43): message #11505: No .dpi information for ?list_add_item@@YAHPEAUlist@@PEAXPEAD@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(71): message #11505: No .dpi information for ?list_print_items@@YAPEADPEAUlist@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(83): message #11505: No .dpi information for ?list_get_index@@YAPEAXPEAUlist@@H@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(90): message #11505: No .dpi information for ?list_get_item@@YAPEAXPEAUlist@@PEAX@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(103): message #11505: No .dpi information for ?list_get_name@@YAPEAXPEAUlist@@PEAD@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(116): message #11505: No .dpi information for ?list_find@@YAHPEAUlist@@PEAD@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(129): message #11505: No .dpi information for ?list_delete_item@@YAXPEAUlist@@PEAX@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(140): message #11505: No .dpi information for ?list_delete_name@@YAXPEAUlist@@PEAD@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(161): message #11505: No .dpi information for ?list_delete_index@@YAXPEAUlist@@H@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(181): message #11505: No .dpi information for ?list_delete_all@@YAXPEAUlist@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(189): message #11505: No .dpi information for ?list_free@@YAXPEAUlist@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\LIST.CPP(196): message #11505: No .dpi information for ?list_print_list@@YAXPEAUlist@@@Z: computing static profile
+1>..\..\list.cpp : message #11503: Total routines 15, routines w/o profile info: 15
+1>  objLoader.cpp
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\NEW(64): message #11505: No .dpi information for ??3@YAXPEAX0@Z: computing static profile
 1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(1334): message #11505: No .dpi information for ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@_K@Z: computing static profile
 1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(1342): message #11505: No .dpi information for ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@_K0@Z: computing static profile
 1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(2289): message #11505: No .dpi information for ?_Xlen@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAXXZ: computing static profile
 1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(2294): message #11505: No .dpi information for ?_Xran@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAXXZ: computing static profile
-1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(599): message #11505: No .dpi information for ??$construct@PEAVSurface@@AEAPEAV1@@?$allocator@PEAVSurface@@@std@@QEAAXPEAPEAVSurface@@AEAPEAV2@@Z: computing static profile
-1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(722): message #11505: No .dpi information for ??$construct@PEAVSurface@@AEAPEAV1@@?$allocator_traits@V?$allocator@PEAVSurface@@@std@@@std@@SAXAEAV?$allocator@PEAVSurface@@@1@PEAPEAVSurface@@AEAPEAV3@@Z: computing static profile
-1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(870): message #11505: No .dpi information for ??$construct@PEAVSurface@@AEAPEAV1@@?$_Wrap_alloc@V?$allocator@PEAVSurface@@@std@@@std@@QEAAXPEAPEAVSurface@@AEAPEAV2@@Z: computing static profile
-1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1753): message #11505: No .dpi information for ?_Xlen@?$vector@PEAVSurface@@V?$allocator@PEAVSurface@@@std@@@std@@IEBAXXZ: computing static profile
-1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1758): message #11505: No .dpi information for ?_Xran@?$vector@PEAVSurface@@V?$allocator@PEAVSurface@@@std@@@std@@IEBAXXZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJLOADER.CPP(7): message #11505: No .dpi information for ?load@objLoader@@QEAAHV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z: computing static profile
+1>..\..\objLoader.cpp : message #11503: Total routines 47, routines w/o profile info: 6
+1>  obj_parser.cpp
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\NEW(64): message #11505: No .dpi information for ??3@YAXPEAX0@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(1334): message #11505: No .dpi information for ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@_K@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(1342): message #11505: No .dpi information for ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@_K0@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(2289): message #11505: No .dpi information for ?_Xlen@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAXXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(2294): message #11505: No .dpi information for ?_Xran@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAXXZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(13): message #11505: No .dpi information for ?obj_free_half_list@@YAXPEAUlist@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(19): message #11505: No .dpi information for ?obj_convert_to_list_index@@YAHHH@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(30): message #11505: No .dpi information for ?obj_convert_to_list_index_v@@YAXHPEAH@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(36): message #11505: No .dpi information for ?obj_set_material_defaults@@YAXPEAUobj_material@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(55): message #11505: No .dpi information for ?obj_parse_vertex_index@@YAHPEAH00@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(95): message #11505: No .dpi information for ?obj_parse_face@@YAPEAUobj_face@@PEAUobj_growable_scene_data@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(109): message #11505: No .dpi information for ?obj_parse_sphere@@YAPEAUobj_sphere@@PEAUobj_growable_scene_data@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(123): message #11505: No .dpi information for ?obj_parse_plane@@YAPEAUobj_plane@@PEAUobj_growable_scene_data@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(137): message #11505: No .dpi information for ?obj_parse_light_point@@YAPEAUobj_light_point@@PEAUobj_growable_scene_data@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(144): message #11505: No .dpi information for ?obj_parse_light_quad@@YAPEAUobj_light_quad@@PEAUobj_growable_scene_data@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(153): message #11505: No .dpi information for ?obj_parse_light_disc@@YAPEAUobj_light_disc@@PEAUobj_growable_scene_data@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(165): message #11505: No .dpi information for ?obj_parse_vector@@YAPEAUobj_vector@@XZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(183): message #11505: No .dpi information for ?obj_parse_camera@@YAXPEAUobj_growable_scene_data@@PEAUobj_camera@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(192): message #11505: No .dpi information for ?obj_parse_mtl_file@@YAHPEADPEAUlist@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(304): message #11505: No .dpi information for ?obj_parse_obj_file@@YAHPEAUobj_growable_scene_data@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(442): message #11505: No .dpi information for ?obj_init_temp_storage@@YAXPEAUobj_growable_scene_data@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(461): message #11505: No .dpi information for ?obj_free_temp_storage@@YAXPEAUobj_growable_scene_data@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(478): message #11505: No .dpi information for ?delete_obj_data@@YAXPEAUobj_scene_data@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(519): message #11505: No .dpi information for ?obj_copy_to_out_storage@@YAXPEAUobj_scene_data@@PEAUobj_growable_scene_data@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\OBJ_PARSER.CPP(552): message #11505: No .dpi information for ?parse_obj_scene@@YAHPEAUobj_scene_data@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z: computing static profile
+1>..\..\obj_parser.cpp : message #11503: Total routines 68, routines w/o profile info: 25
+1>  raytracer.cpp
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\MATH.H(1052): message #11505: No .dpi information for ?cos@@YAMM@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\MATH.H(1132): message #11505: No .dpi information for ?sin@@YAMM@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\NEW(64): message #11505: No .dpi information for ??3@YAXPEAX0@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(453): message #11505: No .dpi information for ??$?K$02M$0A@@@YA?AV?$GenVector@$02M$0A@@@MAEBV0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(438): message #11505: No .dpi information for ??$?D$02M$0A@@@YA?AV?$GenVector@$02M$0A@@@MAEBV0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\RDRAND.H(53): message #11505: No .dpi information for ?rdrand_f32@@YAXPEAM@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\RDRAND.H(56): message #11505: No .dpi information for ?rdrand_u32@@YAXPEAI@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\BUFFER.H(8): message #11505: No .dpi information for ??0Buffer@@QEAA@II@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\BUFFER.H(19): message #11505: No .dpi information for ?at@Buffer@@QEAAAEAV?$GenVector@$02E$0A@@@II@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\BUFFER.H(26): message #11505: No .dpi information for ?alloc@Buffer@@AEAAXXZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(78): message #11505: No .dpi information for ??0?$GenVector@$02E$0A@@@QEAA@EEE@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(222): message #11505: No .dpi information for ??4?$GenVector@$02E$0A@@@QEAAAEAV0@AEBV0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\BUFFER.H(37): message #11505: No .dpi information for ??0LightBuffer@@QEAA@II@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\BUFFER.H(48): message #11505: No .dpi information for ?at@LightBuffer@@QEAAAEAV?$GenVector@$02M$0A@@@II@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\BUFFER.H(56): message #11505: No .dpi information for ?alloc@LightBuffer@@AEAAXXZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(49): message #11505: No .dpi information for ??0?$GenVector@$02M$0A@@@QEAA@XZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(57): message #11505: No .dpi information for ??0?$GenVector@$02M$0A@@@QEAA@AEBV0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(78): message #11505: No .dpi information for ??0?$GenVector@$02M$0A@@@QEAA@MMM@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(102): message #11505: No .dpi information for ??H?$GenVector@$02M$0A@@@QEBA?AV0@AEBV0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(110): message #11505: No .dpi information for ??G?$GenVector@$02M$0A@@@QEBA?AV0@AEBV0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(118): message #11505: No .dpi information for ??D?$GenVector@$02M$0A@@@QEBA?AV0@AEBV0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(134): message #11505: No .dpi information for ??H?$GenVector@$02M$0A@@@QEBA?AV0@M@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(142): message #11505: No .dpi information for ??G?$GenVector@$02M$0A@@@QEBA?AV0@M@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(150): message #11505: No .dpi information for ??D?$GenVector@$02M$0A@@@QEBA?AV0@M@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(166): message #11505: No .dpi information for ??Y?$GenVector@$02M$0A@@@QEAAAEAV0@AEBV0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(215): message #11505: No .dpi information for ??_0?$GenVector@$02M$0A@@@QEAAAEAV0@M@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(222): message #11505: No .dpi information for ??4?$GenVector@$02M$0A@@@QEAAAEAV0@AEBV0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(265): message #11505: No .dpi information for ??G?$GenVector@$02M$0A@@@QEBA?AV0@XZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(273): message #11505: No .dpi information for ??A?$GenVector@$02M$0A@@@QEBAMH@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(278): message #11505: No .dpi information for ??A?$GenVector@$02M$0A@@@QEAAAEAMH@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(283): message #11505: No .dpi information for ??R?$GenVector@$02M$0A@@@QEBAMH@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(303): message #11505: No .dpi information for ?dot@?$GenVector@$02M$0A@@@QEBAMAEBV1@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(311): message #11505: No .dpi information for ?cross@?$GenVector@$02M$0A@@@QEBA?AV1@AEBV1@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(329): message #11505: No .dpi information for ?squaredLength@?$GenVector@$02M$0A@@@QEBAMXZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(345): message #11505: No .dpi information for ?length@?$GenVector@$02M$0A@@@QEBAMXZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\GENVECTOR.H(350): message #11505: No .dpi information for ?normalize@?$GenVector@$02M$0A@@@QEAAAEAV1@XZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\RAY.H(11): message #11505: No .dpi information for ??0Ray@@QEAA@XZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\RAY.H(17): message #11505: No .dpi information for ??0Ray@@QEAA@V?$GenVector@$02M$0A@@@0@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\RAY.H(24): message #11505: No .dpi information for ??4Ray@@QEAAAEAV0@AEBV0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\CAMERA.H(22): message #11505: No .dpi information for ??0Camera@@QEAA@HH@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\CAMERA.H(24): message #11505: No .dpi information for ?setBasis@Camera@@QEAAXV?$GenVector@$02M$0A@@@0V2@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\CAMERA.H(42): message #11505: No .dpi information for ?castRay@Camera@@QEBA?AVRay@@HH@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\AABBOX.H(11): message #11505: No .dpi information for ??0AABBox@@QEAA@XZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\AABBOX.H(16): message #11505: No .dpi information for ??0AABBox@@QEAA@V?$GenVector@$02M$0A@@@0@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\AABBOX.H(27): message #11505: No .dpi information for ?hit_test@AABBox@@UEBAMAEBVRay@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\AABBOX.H(9): message #11505: No .dpi information for ??4AABBox@@QEAAAEAV0@AEBV0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\HITVECTOR.H(8): message #11505: No .dpi information for ??0HitVector@@QEAA@XZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\HITVECTOR.H(8): message #11505: No .dpi information for ??4HitVector@@QEAAAEAU0@AEBU0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\POINTLIGHT.H(14): message #11505: No .dpi information for ??0PointLight@@QEAA@V?$GenVector@$02M$0A@@@000@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACE.H(17): message #11505: No .dpi information for ?hit@Surface@@UEBA?AUHitVector@@AEBVRay@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACE.H(24): message #11505: No .dpi information for ?hit_test@Surface@@UEBAMAEBVRay@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACE.H(11): message #11505: No .dpi information for ??0Surface@@QEAA@XZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SPHERE.H(11): message #11505: No .dpi information for ??0Sphere@@QEAA@V?$GenVector@$02M$0A@@@M0@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SPHERE.H(34): message #11505: No .dpi information for ?hit_test@Sphere@@UEBAMAEBVRay@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SPHERE.H(57): message #11505: No .dpi information for ?hit@Sphere@@UEBA?AUHitVector@@AEBVRay@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SPHERE.H(85): message #11505: No .dpi information for ?normalAt@Sphere@@QEBA?AV?$GenVector@$02M$0A@@@V2@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELIST.H(18): message #11505: No .dpi information for ??0SurfaceList@@QEAA@XZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELIST.H(20): message #11505: No .dpi information for ??0SurfaceList@@QEAA@PEBV?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELIST.H(45): message #11505: No .dpi information for ?intersectScene@SurfaceList@@UEBAPEBVSurface@@AEBVRay@@AEAUHitVector@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELIST.H(67): message #11505: No .dpi information for ?intersectScene_max@SurfaceList@@UEBA_NAEBVRay@@M@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELIST.H(78): message #11505: No .dpi information for ?size@SurfaceList@@UEBAHXZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELIST.H(82): message #11505: No .dpi information for ?print@SurfaceList@@UEAAXXZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELISTAABB.H(27): message #11505: No .dpi information for ?factory@SurfaceListAABB@@QEBAPEAV1@PEBV?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELISTAABB.H(31): message #11505: No .dpi information for ??0SurfaceListAABB@@QEAA@PEBV?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELISTAABB.H(237): message #11505: No .dpi information for ?intersectScene@SurfaceListAABB@@UEBAPEBVSurface@@AEBVRay@@AEAUHitVector@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELISTAABB.H(306): message #11505: No .dpi information for ?intersectScene_max@SurfaceListAABB@@UEBA_NAEBVRay@@M@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELISTAABB.H(332): message #11505: No .dpi information for ?size@SurfaceListAABB@@UEBAHXZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELISTAABB.H(347): message #11505: No .dpi information for ?print@SurfaceListAABB@@UEAAXXZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\AFFINETRANSFORM.H(8): message #11505: No .dpi information for ??0AffineTransform@@QEAA@XZ: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\AFFINETRANSFORM.H(44): message #11505: No .dpi information for ?apply@AffineTransform@@QEBA?AV?$GenVector@$02M$0A@@@AEBV2@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\AFFINETRANSFORM.H(5): message #11505: No .dpi information for ??4AffineTransform@@QEAAAEAV0@AEBV0@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SURFACELISTAABB.H(185): message #11505: No .dpi information for ??R__cilk_spawn_1@?DC@???0SurfaceListAABB@@QEAA@PEBV?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@@Z@__N_19_______raytracer_cpp_a188f1ea@@QEBAXXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(1038): message #11505: No .dpi information for ?append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@AEBV12@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(1044): message #11505: No .dpi information for ?append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@AEBV12@_K1@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(1334): message #11505: No .dpi information for ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@_K@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(1342): message #11505: No .dpi information for ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@_K0@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(1777): message #11505: No .dpi information for ?capacity@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_KXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(2289): message #11505: No .dpi information for ?_Xlen@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAXXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(2294): message #11505: No .dpi information for ?_Xran@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAXXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(532): message #11505: No .dpi information for ?select_on_container_copy_construction@?$allocator@PEBVSurface@@@std@@QEBA?AV12@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(553): message #11505: No .dpi information for ??0?$allocator@PEBVSurface@@@std@@QEAA@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(557): message #11505: No .dpi information for ??0?$allocator@PEBVSurface@@@std@@QEAA@AEBV01@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(572): message #11505: No .dpi information for ?deallocate@?$allocator@PEBVSurface@@@std@@QEAAXPEAPEBVSurface@@_K@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(577): message #11505: No .dpi information for ?allocate@?$allocator@PEBVSurface@@@std@@QEAAPEAPEBVSurface@@_K@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(592): message #11505: No .dpi information for ?construct@?$allocator@PEBVSurface@@@std@@QEAAXPEAPEBVSurface@@AEBQEBV3@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(611): message #11505: No .dpi information for ?max_size@?$allocator@PEBVSurface@@@std@@QEBA_KXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(599): message #11505: No .dpi information for ??$construct@PEBVSurface@@PEBV1@@?$allocator@PEBVSurface@@@std@@QEAAXPEAPEBVSurface@@$$QEAPEBV2@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(599): message #11505: No .dpi information for ??$construct@PEBVSurface@@AEAPEBV1@@?$allocator@PEBVSurface@@@std@@QEAAXPEAPEBVSurface@@AEAPEBV2@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(734): message #11505: No .dpi information for ?max_size@?$allocator_traits@V?$allocator@PEBVSurface@@@std@@@std@@SA_KAEBV?$allocator@PEBVSurface@@@2@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(740): message #11505: No .dpi information for ?select_on_container_copy_construction@?$allocator_traits@V?$allocator@PEBVSurface@@@std@@@std@@SA?AV?$allocator@PEBVSurface@@@2@AEBV32@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(722): message #11505: No .dpi information for ??$construct@PEBVSurface@@PEBV1@@?$allocator_traits@V?$allocator@PEBVSurface@@@std@@@std@@SAXAEAV?$allocator@PEBVSurface@@@1@PEAPEBVSurface@@$$QEAPEBV3@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(722): message #11505: No .dpi information for ??$construct@PEBVSurface@@AEAPEBV1@@?$allocator_traits@V?$allocator@PEBVSurface@@@std@@@std@@SAXAEAV?$allocator@PEBVSurface@@@1@PEAPEBVSurface@@AEAPEBV3@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(722): message #11505: No .dpi information for ??$construct@PEBVSurface@@AEBQEBV1@@?$allocator_traits@V?$allocator@PEBVSurface@@@std@@@std@@SAXAEAV?$allocator@PEBVSurface@@@1@PEAPEBVSurface@@AEBQEBV3@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(778): message #11505: No .dpi information for ?select_on_container_copy_construction@?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@QEBA?AU12@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(801): message #11505: No .dpi information for ??0?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@QEAA@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(806): message #11505: No .dpi information for ??0?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@QEAA@AEBV?$allocator@PEBVSurface@@@1@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(846): message #11505: No .dpi information for ?allocate@?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@QEAAPEAPEBVSurface@@_K@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(857): message #11505: No .dpi information for ?deallocate@?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@QEAAXPEAPEBVSurface@@_K@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(883): message #11505: No .dpi information for ?max_size@?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@QEBA_KXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(870): message #11505: No .dpi information for ??$construct@PEBVSurface@@PEBV1@@?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@QEAAXPEAPEBVSurface@@$$QEAPEBV2@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(870): message #11505: No .dpi information for ??$construct@PEBVSurface@@AEAPEBV1@@?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@QEAAXPEAPEBVSurface@@AEAPEBV2@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(870): message #11505: No .dpi information for ??$construct@PEBVSurface@@AEBQEBV1@@?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@QEAAXPEAPEBVSurface@@AEBQEBV2@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(481): message #11505: No .dpi information for ??0?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@QEAA@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(589): message #11505: No .dpi information for ??0?$_Vector_alloc@$0A@U?$_Vec_base_types@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@@std@@QEAA@AEBV?$allocator@PEBVSurface@@@1@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(641): message #11505: No .dpi information for ?_Getal@?$_Vector_alloc@$0A@U?$_Vec_base_types@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@@std@@QEBA?AU?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@2@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(680): message #11505: No .dpi information for ??0?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEAA@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(721): message #11505: No .dpi information for ??0?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEAA@AEBV01@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(865): message #11505: No .dpi information for ?push_back@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEAAX$$QEAPEBVSurface@@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(944): message #11505: No .dpi information for ??1?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEAA@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1009): message #11505: No .dpi information for ?capacity@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEBA_KXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1014): message #11505: No .dpi information for ?_Unused_capacity@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEBA_KXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1029): message #11505: No .dpi information for ?begin@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEBA?AV?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@2@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1039): message #11505: No .dpi information for ?end@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEBA?AV?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@2@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1147): message #11505: No .dpi information for ?size@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEBA_KXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1152): message #11505: No .dpi information for ?max_size@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEBA_KXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1167): message #11505: No .dpi information for ?at@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEBAAEBQEBVSurface@@_K@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1174): message #11505: No .dpi information for ?at@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEAAAEAPEBVSurface@@_K@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1243): message #11505: No .dpi information for ?push_back@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEAAXAEBQEBVSurface@@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1507): message #11505: No .dpi information for ?clear@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@QEAAXXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1546): message #11505: No .dpi information for ?_Buy@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@IEAA_N_K@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1565): message #11505: No .dpi information for ?_Destroy@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@IEAAXPEAPEBVSurface@@0@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1571): message #11505: No .dpi information for ?_Grow_to@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@IEBA_K_K@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1582): message #11505: No .dpi information for ?_Inside@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@IEBA_NPEBQEBVSurface@@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1587): message #11505: No .dpi information for ?_Reallocate@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@IEAAX_K@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1612): message #11505: No .dpi information for ?_Reserve@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@IEAAX_K@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1622): message #11505: No .dpi information for ?_Tidy@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@IEAAXXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1753): message #11505: No .dpi information for ?_Xlen@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@IEBAXXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1758): message #11505: No .dpi information for ?_Xran@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@IEBAXXZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1780): message #11505: No .dpi information for ?_Orphan_range@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@IEBAXPEAPEBVSurface@@0@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1637): message #11505: No .dpi information for ??$_Ucopy@V?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@std@@@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@IEAAPEAPEBVSurface@@V?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@1@0PEAPEBV2@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1645): message #11505: No .dpi information for ??$_Umove@PEAPEBVSurface@@@?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@IEAAPEAPEBVSurface@@PEAPEBV2@00@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(47): message #11505: No .dpi information for ??0?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@std@@QEAA@PEAPEBVSurface@@PEBU_Container_base0@1@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(60): message #11505: No .dpi information for ?_Unchecked@?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@std@@QEBAPEBQEBVSurface@@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(65): message #11505: No .dpi information for ??D?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@std@@QEBAAEBQEBVSurface@@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(95): message #11505: No .dpi information for ??E?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@std@@QEAAAEAV01@XZ: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(203): message #11505: No .dpi information for ??8?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@std@@QEBA_NAEBV01@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(209): message #11505: No .dpi information for ??9?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@std@@QEBA_NAEBV01@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(254): message #11505: No .dpi information for ?_Compat@?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@std@@QEBAXAEBV12@@Z: computing static profile
 1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(1753): message #11505: No .dpi information for ?_Xlen@?$vector@PEAVPointLight@@V?$allocator@PEAVPointLight@@@std@@@std@@IEBAXXZ: computing static profile
-1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\TYPE_TRAITS(1504): message #11505: No .dpi information for ??$forward@AEAPEAVSurface@@@std@@YAAEAPEAVSurface@@AEAPEAV1@@Z: computing static profile
-1>..\..\raytracer.cpp : message #11503: Total routines 252, routines w/o profile info: 18
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTRING(2414): message #11505: No .dpi information for ??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@$$QEAV10@0@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(22): message #11505: No .dpi information for ??$_Allocate@PEBVSurface@@@std@@YAPEAPEBVSurface@@_KPEAPEBV1@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY(424): message #11505: No .dpi information for ??$_Uninitialized_copy@V?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@std@@PEAPEBVSurface@@U?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@2@@std@@YAPEAPEBVSurface@@V?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@0@0PEAPEBV1@AEAU?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@0@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\VECTOR(264): message #11505: No .dpi information for ??$_Unchecked@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@std@@YAPEBQEBVSurface@@V?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PEBVSurface@@@std@@@std@@@0@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XUTILITY(280): message #11505: No .dpi information for ??$_Unchecked@PEAPEBVSurface@@@std@@YAPEAPEBVSurface@@PEAPEBV1@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY(414): message #11505: No .dpi information for ??$_Uninit_copy@PEBQEBVSurface@@PEAPEBV1@U?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@@std@@YAPEAPEBVSurface@@PEBQEBV1@0PEAPEBV1@AEAU?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@0@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XUTILITY(453): message #11505: No .dpi information for ??$_Ptr_cat@PEBVSurface@@PEBV1@@std@@YA?AU_Scalar_ptr_iterator_tag@0@PEBQEBVSurface@@PEAPEBV2@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY(401): message #11505: No .dpi information for ??$_Uninit_copy@QEBVSurface@@PEBV1@@std@@YAPEAPEBVSurface@@PEBQEBV1@0PEAPEBV1@AEAU?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@0@U_Scalar_ptr_iterator_tag@0@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XUTILITY(288): message #11505: No .dpi information for ??$_Rechecked@PEAPEBVSurface@@PEAPEBV1@@std@@YAAEAPEAPEBVSurface@@AEAPEAPEBV1@PEAPEBV1@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(95): message #11505: No .dpi information for ??$_Destroy_range@U?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@@std@@YAXPEAPEBVSurface@@0AEAU?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@0@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XUTILITY(444): message #11505: No .dpi information for ??$_Ptr_cat@PEBVSurface@@PEBV1@@std@@YA?AU_Scalar_ptr_iterator_tag@0@PEAPEBVSurface@@0@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY0(89): message #11505: No .dpi information for ??$_Destroy_range@U?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@@std@@YAXPEAPEBVSurface@@0AEAU?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@0@U_Scalar_ptr_iterator_tag@0@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTDDEF(92): message #11505: No .dpi information for ??$addressof@PEBVSurface@@@std@@YAPEAPEBVSurface@@AEAPEBV1@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY(492): message #11505: No .dpi information for ??$_Uninitialized_move@PEAPEBVSurface@@PEAPEBV1@U?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@@std@@YAPEAPEBVSurface@@PEAPEBV1@00AEAU?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@0@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY(482): message #11505: No .dpi information for ??$_Uninit_move@PEAPEBVSurface@@PEAPEBV1@U?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@std@@@std@@YAPEAPEBVSurface@@PEAPEBV1@00AEAU?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@0@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XUTILITY(645): message #11505: No .dpi information for ??$_Val_type@PEAPEBVSurface@@@std@@YAPEAPEBVSurface@@PEAPEBV1@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XMEMORY(469): message #11505: No .dpi information for ??$_Uninit_move@PEBVSurface@@PEBV1@PEBV1@@std@@YAPEAPEBVSurface@@PEAPEBV1@00AEAU?$_Wrap_alloc@V?$allocator@PEBVSurface@@@std@@@0@0U_Scalar_ptr_iterator_tag@0@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\TYPE_TRAITS(1504): message #11505: No .dpi information for ??$forward@PEBVSurface@@@std@@YA$$QEAPEBVSurface@@AEAPEBV1@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\XSTDDEF(92): message #11505: No .dpi information for ??$addressof@QEBVSurface@@@std@@YAPEBQEBVSurface@@AEBQEBV1@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\TYPE_TRAITS(1504): message #11505: No .dpi information for ??$forward@AEAPEBVSurface@@@std@@YAAEAPEBVSurface@@AEAPEBV1@@Z: computing static profile
+1>C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\INCLUDE\TYPE_TRAITS(1504): message #11505: No .dpi information for ??$forward@AEBQEBVSurface@@@std@@YAAEBQEBVSurface@@AEBQEBV1@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\RAYTRACER.CPP : message #11505: No .dpi information for ??_HAffineTransform@@QEAAPEAV0@H@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SHADER.H(17): message #11505: No .dpi information for ?getTotalLight@@YAXAEAUHitVector@@PEBVSurface@@PEBV?$vector@PEAVPointLight@@V?$allocator@PEAVPointLight@@@std@@@std@@PEBV?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@4@AEBVSurfaceListAABB@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\RAYTRACER.CPP(42): message #11505: No .dpi information for main: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\RAYTRACER.CPP(166): message #11505: No .dpi information for ?obj_to_Vector3@@YA?AV?$GenVector@$02M$0A@@@PEBUobj_vector@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\RAYTRACER.CPP(170): message #11505: No .dpi information for ?createFractal@@YAXAEAV?$vector@PEBVSurface@@V?$allocator@PEBVSurface@@@std@@@std@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\RAYTRACER.CPP : message #11505: No .dpi information for __sti__?affs@@3PAVAffineTransform@@A: computing static profile
+1>..\..\raytracer.cpp : message #11503: Total routines 281, routines w/o profile info: 166
 1>  simplePPM.cpp
-1>C:\USERS\AARON\DESKTOP\CSSE451-1314B-GOLLIVAM\SIMPLEPPM.CPP(7): message #11505: No .dpi information for ?simplePPM__getFirstIntChar@@YAEPEAU_iobuf@@@Z: computing static profile
-1>C:\USERS\AARON\DESKTOP\CSSE451-1314B-GOLLIVAM\SIMPLEPPM.CPP(25): message #11505: No .dpi information for ?simplePPM__getuint@@YAIPEAU_iobuf@@@Z: computing static profile
-1>C:\USERS\AARON\DESKTOP\CSSE451-1314B-GOLLIVAM\SIMPLEPPM.CPP(78): message #11505: No .dpi information for ?simplePPM_read_ppm@@YAPEAEPEBDPEAI1@Z: computing static profile
-1>..\..\simplePPM.cpp : message #11503: Total routines 5, routines w/o profile info: 3
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SIMPLEPPM.CPP(7): message #11505: No .dpi information for ?simplePPM__getFirstIntChar@@YAEPEAU_iobuf@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SIMPLEPPM.CPP(25): message #11505: No .dpi information for ?simplePPM__getuint@@YAIPEAU_iobuf@@@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SIMPLEPPM.CPP(53): message #11505: No .dpi information for ?simplePPM__sfopen@@YAPEAU_iobuf@@PEBD0@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SIMPLEPPM.CPP(67): message #11505: No .dpi information for ?simplePPM_write_ppm@@YAHPEBDIIPEBE@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\SIMPLEPPM.CPP(78): message #11505: No .dpi information for ?simplePPM_read_ppm@@YAPEAEPEBDPEAI1@Z: computing static profile
+1>..\..\simplePPM.cpp : message #11503: Total routines 5, routines w/o profile info: 5
 1>  string_extra.cpp
-1>C:\Users\Aaron\Desktop\csse451-1314b-gollivam\Ray.h(13): message : LOOP WAS VECTORIZED
-1>C:\Users\Aaron\Desktop\csse451-1314b-gollivam\Ray.h(13): message : LOOP WAS VECTORIZED
-1>C:\Users\Aaron\Desktop\csse451-1314b-gollivam\GenVector.h(360): message : LOOP WAS VECTORIZED
-1>C:\Users\Aaron\Desktop\csse451-1314b-gollivam\Shader.h(72): message : LOOP WAS VECTORIZED
-1>C:\Users\Aaron\Desktop\csse451-1314b-gollivam\Shader.h(81): message : LOOP WAS VECTORIZED
-1>C:\Users\Aaron\Desktop\csse451-1314b-gollivam\obj_parser.cpp(114): message : LOOP WAS VECTORIZED
-1>C:\Users\Aaron\Desktop\csse451-1314b-gollivam\obj_parser.cpp(100): message : LOOP WAS VECTORIZED
-1>C:\Users\Aaron\Desktop\csse451-1314b-gollivam\obj_parser.cpp(101): message : LOOP WAS VECTORIZED
-1>C:\Users\Aaron\Desktop\csse451-1314b-gollivam\obj_parser.cpp(102): message : LOOP WAS VECTORIZED
-1>C:\Users\Aaron\Desktop\csse451-1314b-gollivam\objLoader.cpp(12): message : BLOCK WAS VECTORIZED
-1>C:\Users\Aaron\Desktop\csse451-1314b-gollivam\raytracer.cpp(159): message : LOOP WAS VECTORIZED
-1>C:\Users\Aaron\Desktop\csse451-1314b-gollivam\raytracer.cpp(253): message : LOOP WAS VECTORIZED
-1>C:\Users\Aaron\Desktop\csse451-1314b-gollivam\raytracer.cpp(253): message : LOOP WAS VECTORIZED
-1>C:\Users\Aaron\Desktop\csse451-1314b-gollivam\Sphere.h(64): message : LOOP WAS VECTORIZED
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\STRING_EXTRA.CPP(5): message #11505: No .dpi information for ?strequal@@YADPEBD0@Z: computing static profile
+1>C:\USERS\AARON\DOCUMENTS\GITHUB\FRACTALFLAME3D\STRING_EXTRA.CPP(12): message #11505: No .dpi information for ?contains@@YADPEBD0@Z: computing static profile
+1>..\..\string_extra.cpp : message #11503: Total routines 2, routines w/o profile info: 2
+1>C:\Users\Aaron\Documents\GitHub\FractalFlame3D\GenVector.h(216): message : LOOP WAS VECTORIZED
+1>C:\Users\Aaron\Documents\GitHub\FractalFlame3D\AffineTransform.h(5): message : BLOCK WAS VECTORIZED
+1>C:\Users\Aaron\Documents\GitHub\FractalFlame3D\AffineTransform.h(21): message : BLOCK WAS VECTORIZED
 1>  xilink: executing 'link'
-1>  RayTracingVS.vcxproj -> C:\Users\Aaron\Desktop\csse451-1314b-gollivam\RayTracingVS\x64\Release\RayTracingVS.exe
+1>  RayTracingVS.vcxproj -> C:\Users\Aaron\Documents\GitHub\FractalFlame3D\RayTracingVS\x64\Release\Fractals.exe
 </pre></table><table width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2></font></table></pre></body></html>

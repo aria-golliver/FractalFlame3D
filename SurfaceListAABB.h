@@ -87,6 +87,8 @@ public:
 			float max_y = -std::numeric_limits<float>::infinity();
 			float max_z = -std::numeric_limits<float>::infinity();
 
+			float mean[3] = { 0, 0, 0 };
+
 			for (const Surface *surface : *surfaces){
 				min_x = min2(min_x, surface->min_point[0]);
 				min_y = min2(min_y, surface->min_point[1]);
@@ -95,7 +97,15 @@ public:
 				max_x = max2(max_x, surface->max_point[0]);
 				max_y = max2(max_y, surface->max_point[1]);
 				max_z = max2(max_z, surface->max_point[2]);
+
+				mean[0] += surface->min_point[0];
+				mean[1] += surface->min_point[1];
+				mean[2] += surface->min_point[2];
 			}
+
+			mean[0] /= size;
+			mean[1] /= size;
+			mean[2] /= size;
 
 			float dx = abs(max_x - min_x);
 			float dy = abs(max_y - min_y);
@@ -115,16 +125,9 @@ public:
 				no_split_found = false;
 				surfaces_lhs.clear();
 				surfaces_rhs.clear();
-				float mean = 0;
 
 				for (int i = 0; i < size; i++){
-					mean += surfaces->at(i)->min_point[dir % 3];
-				}
-				
-				mean /= size;
-
-				for (int i = 0; i < size; i++){
-					if (surfaces->at(i)->min_point[dir % 3] < mean)
+					if (surfaces->at(i)->min_point[dir % 3] < mean[dir % 3])
 						surfaces_lhs.push_back(surfaces->at(i));
 					
 					else
@@ -132,7 +135,6 @@ public:
 				}
 
 				if (surfaces_lhs.size() == 0 || surfaces_rhs.size() == 0){
-					// printf("Doing the shit split %d %f\n", surfaces->size(), mean);
 					no_split_found = true;
 					dir++;
 					if (split_tries++ == 3){
@@ -150,30 +152,10 @@ public:
 				}
 			}
 
-			/*
-			min_x =  std::numeric_limits<float>::infinity();
-			min_y =  std::numeric_limits<float>::infinity();
-			min_z =  std::numeric_limits<float>::infinity();
-
-			max_x = -std::numeric_limits<float>::infinity();
-			max_y = -std::numeric_limits<float>::infinity();
-			max_z = -std::numeric_limits<float>::infinity();
-			*/
-
 			if (surfaces_lhs.size() == 1){
 				LHS = NULL;
 				LHS_S = surfaces_lhs.at(0);
 				left_leaf = true;
-
-				/*
-				min_x = min2(min_x, LHS_S->min_point[0]);
-				min_y = min2(min_y, LHS_S->min_point[1]);
-				min_z = min2(min_z, LHS_S->min_point[2]);
-
-				max_x = max2(max_x, LHS_S->max_point[0]);
-				max_y = max2(max_y, LHS_S->max_point[1]);
-				max_z = max2(max_z, LHS_S->max_point[2]);
-				*/
 			}
 			else {
 				left_leaf = false;
@@ -183,32 +165,12 @@ public:
 					LHS = new SurfaceList(new vector<const Surface *>(surfaces_lhs));
 				else
 					LHS = cilk_spawn factory(&surfaces_lhs);
-
-				/*
-				min_x = min2(min_x, LHS->AABB.min_point[0]);
-				min_y = min2(min_y, LHS->AABB.min_point[1]);
-				min_z = min2(min_z, LHS->AABB.min_point[2]);
-
-				max_x = max2(max_x, LHS->AABB.max_point[0]);
-				max_y = max2(max_y, LHS->AABB.max_point[1]);
-				max_z = max2(max_z, LHS->AABB.max_point[2]);
-				*/
 			}
 
 			if (surfaces_rhs.size() == 1){
 				RHS = NULL;
 				RHS_S = surfaces_rhs.at(0);
 				right_leaf = true;
-
-				/*
-				min_x = min2(min_x, RHS_S->min_point[0]);
-				min_y = min2(min_y, RHS_S->min_point[1]);
-				min_z = min2(min_z, RHS_S->min_point[2]);
-
-				max_x = max2(max_x, RHS_S->max_point[0]);
-				max_y = max2(max_y, RHS_S->max_point[1]);
-				max_z = max2(max_z, RHS_S->max_point[2]);
-				*/
 			}
 			else {
 				right_leaf = false;
@@ -218,19 +180,11 @@ public:
 					RHS = new SurfaceList(new vector<const Surface *>(surfaces_rhs));
 				else
 					RHS = factory(&surfaces_rhs);
-				/*
-				min_x = min2(min_x, RHS->AABB.min_point[0]);
-				min_y = min2(min_y, RHS->AABB.min_point[1]);
-				min_z = min2(min_z, RHS->AABB.min_point[2]);
-
-				max_x = max2(max_x, RHS->AABB.max_point[0]);
-				max_y = max2(max_y, RHS->AABB.max_point[1]);
-				max_z = max2(max_z, RHS->AABB.max_point[2]);
-				*/
 			}
 
-			cilk_sync;
 			AABB = AABBox(Vector3(min_x, min_y, min_z), Vector3(max_x, max_y, max_z));
+
+			cilk_sync;
 		}
     }
 
