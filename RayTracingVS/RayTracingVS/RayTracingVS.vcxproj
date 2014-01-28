@@ -50,7 +50,7 @@
     <PlatformToolset>Intel C++ Compiler XE 14.0</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
-    <NumberOfCilkThreads>2</NumberOfCilkThreads>
+    <NumberOfCilkThreads>4</NumberOfCilkThreads>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -184,6 +184,7 @@
     <ClInclude Include="..\..\SurfaceList.h" />
     <ClInclude Include="..\..\SurfaceListAABB.h" />
     <ClInclude Include="..\..\Triangle.h" />
+    <ClInclude Include="..\..\Variations.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\list.cpp" />

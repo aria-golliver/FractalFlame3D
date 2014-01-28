@@ -7,7 +7,6 @@
 #include "SurfaceList.h"
 #include <cmath>
 
-#define ALPHA 0.1f
 
 
 void getTotalLight(HitVector& hitVector, 
@@ -42,7 +41,7 @@ void getTotalLight(HitVector& hitVector,
 
     hitVector.totalLight = (totalAmbientLight);
 
-	if (ALPHA > 0){
+	if (ALPHA > 0 && ALPHA < 1){
 		Vector3 totalAlphaLight(0, 0, 0);
 		HitVector hitAlpha;
 		hitAlpha.hit = false;
@@ -51,7 +50,7 @@ void getTotalLight(HitVector& hitVector,
 
 		if (hitAlpha.hit){
 			getTotalLight(hitAlpha, nextSurfaceRef, pointLights, surfaces, surfaceList);
-			hitVector.totalLight += hitAlpha.totalLight * ALPHA;
+			hitVector.totalLight += hitAlpha.totalLight * (1.0F - ALPHA);
 		}
 	}
 }

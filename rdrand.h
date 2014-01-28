@@ -51,7 +51,9 @@ inline void rdrand_f64(double *p){
 
 #else
 inline void rdrand_f32(float *p){
-	*p = (float)rand() / RAND_MAX;
+	*p = ((float)rand() / (float)RAND_MAX);
+	if (rand() % 2)
+		*p *= -1;
 }
 inline void rdrand_u32(unsigned int *p){
 	*p = (unsigned int)rand();

@@ -83,9 +83,9 @@ public:
 			float min_y =  std::numeric_limits<float>::infinity();
 			float min_z =  std::numeric_limits<float>::infinity();
 
-			float max_x = -std::numeric_limits<float>::infinity();
-			float max_y = -std::numeric_limits<float>::infinity();
-			float max_z = -std::numeric_limits<float>::infinity();
+			float max_x =  -std::numeric_limits<float>::infinity();
+			float max_y =  -std::numeric_limits<float>::infinity();
+			float max_z =  -std::numeric_limits<float>::infinity();
 
 			float mean[3] = { 0, 0, 0 };
 
@@ -224,9 +224,11 @@ public:
 			nearestSurface_rhs = RHS_S;
 		}
 		else if (!right_leaf && RHS) {
-			if (RHS->AABB.hit_test(ray) > 0){
-				nearestSurface_rhs = RHS->intersectScene(ray, hit_rhs);
-				t_rhs = hit_rhs.t;
+			if (t_rhs = RHS->AABB.hit_test(ray) > 0){
+				if (t_rhs != -1 && t_rhs < t_lhs || t_lhs == -1){
+					nearestSurface_rhs = RHS->intersectScene(ray, hit_rhs);
+					t_rhs = hit_rhs.t;
+				}
 			}
 		}
 

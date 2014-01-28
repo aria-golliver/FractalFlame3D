@@ -8,21 +8,14 @@
 
 class Sphere : public Surface {
 public:
-	Sphere(Vector3 pos, float rad, Vector3 mat_ambient){
+	Sphere(Vector3 pos, Vector3 mat_ambient){
 		this->pos = pos;
-		this->radius = rad;
 
 		
         this->mat_ambient = mat_ambient;
-		/*
-		this->mat_diffuse = mat_diffuse;
-        this->mat_specular = mat_specular;
-        this->shiny = shiny;
-        this->reflect = reflect;
-		this->alpha = alpha;
-		*/
-		this->min_point = pos - rad;
-		this->max_point = pos + rad;
+
+		this->min_point = pos - radius;
+		this->max_point = pos + radius;
 	}
 
     
@@ -36,7 +29,7 @@ public:
 		const Vector3 d = ray.dir;
 		const Vector3 e = ray.pos;
 		const Vector3 c = this->pos;
-		const float R = this->radius;
+		const float R = radius;
 
 		const float A = d.dot(d);
 		const float B = 2.0f * d.dot(e-c);
@@ -87,7 +80,6 @@ public:
     };
 private:
 	Vector3 pos;
-	float radius;
 
 	float square(const float f) const {
 		return f*f;

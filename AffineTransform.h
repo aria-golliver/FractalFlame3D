@@ -18,22 +18,14 @@ public:
 		rdrand_f32(&j);
 		rdrand_f32(&k);
 		rdrand_f32(&l);
-		a = a * 2 - 1;
-		b = b * 2 - 1;
-		c = c * 2 - 1;
-		d = d * 2 - 1;
-		e = e * 2 - 1;
-		f = f * 2 - 1;
-		g = g * 2 - 1;
-		h = h * 2 - 1;
-		i = i * 2 - 1;
-		j = j * 2 - 1;
-		k = k * 2 - 1;
-		l = l * 2 - 1;
 
 		rdrand_f32(&col[0]);
 		rdrand_f32(&col[1]);
 		rdrand_f32(&col[2]);
+
+		setabs(col[0]);
+		setabs(col[1]);
+		setabs(col[2]);
 
 		float maxcol = max3(col[0], col[1], col[2]);
 		col /= maxcol;

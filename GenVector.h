@@ -17,6 +17,9 @@ const float epsilon = 0.0005f;
 #define min3(a,b,c) min2(a, min2(b, c))
 #define min4(a,b,c,d) min(a, min3(b, c, d))
 
+#define setmax(a,b) (a = max2(a,b))
+#define setabs(a) (a = abs(a))
+
 //enable the padding conversion function - slow
 //#define VECTOR_PADDING_CONVERSION
 

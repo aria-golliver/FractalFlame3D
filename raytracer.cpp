@@ -1,3 +1,10 @@
+#define fractal_points  10000000
+#define MIN_TREE_SPLIT (10)
+#define radius 0.003
+#define ALPHA 0.01f
+
+int wid = 1920, hei = 1080;
+
 #include "GenVector.h"
 #include "Buffer.h"
 #include "objLoader.h"
@@ -8,10 +15,6 @@
 #include "PointLight.h"
 #include "rdrand.h"
 #include "SurfaceList.h"
-
-#define fractal_points  50000000
-#define MIN_TREE_SPLIT (1)
-
 #include "SurfaceListAABB.h"
 #include <vector>
 #include <chrono>
@@ -22,6 +25,7 @@
 #include <random>
 #include <omp.h>
 #include "AffineTransform.h"
+#include "Variations.h"
 
 using namespace std;
 using namespace std::chrono;
@@ -30,20 +34,21 @@ Vector3 obj_to_Vector3(const obj_vector* v);
 void createFractal(vector<const Surface *> &surfaces);
 
 
-int wid = 1920, hei = 1080;
 
 #include "Shader.h"
 
-const int num_threads = 12;
+const int num_threads = 8;
 
-#define n_affines 6
+#define n_affines 3
 AffineTransform affs[n_affines];
 
 int main(int argc, char **argv){
 	srand(time(NULL));
 	printf("THIS MUST BE RUN ON AN IVY BRIDGE CPU OR BETTER!!!\n");
 	omp_set_num_threads(num_threads);
-	string filename = "fractals.obj";
+	string filename = "fractals";
+
+	high_resolution_clock::time_point time_start = high_resolution_clock::now();
 
 
 	vector<const Surface *> surfaces;
@@ -60,11 +65,8 @@ int main(int argc, char **argv){
 
 	high_resolution_clock::time_point surfacelist_time_end = high_resolution_clock::now();
 	duration<double> surfacelist_runtime = duration_cast<duration<double>>(surfacelist_time_end - surfacelist_time_start);
-	printf("time to create surface tree: %f\n", surfacelist_runtime.count());
+	printf("time to create surface tree: %.2f\n", surfacelist_runtime.count());
 
-	printf("%d %d surfaces total\n", (int)surfaces.size(), (int)surfaceList.size());
-
-	high_resolution_clock::time_point time_start = high_resolution_clock::now();
 
 	for (int framecount = 0; framecount < 100; framecount++){
 		high_resolution_clock::time_point frame_start = high_resolution_clock::now();
@@ -72,17 +74,15 @@ int main(int argc, char **argv){
 		LightBuffer lb = LightBuffer(wid, hei);
 
 		float theta = framecount * PI * 2.0f / 100.0f;
-		// printf("\n---------\n\n");
-		printf("frame theta %f %d\n", theta, framecount);
 
 		vector<PointLight *> pointLights;
 		Camera camera(wid, hei);
 		pointLights.push_back(new PointLight(Vector3(2, 2, 2), Vector3(2, 2, 2), Vector3(2, 2, 2), Vector3(2, 2, 2)));
-		//pointLights.push_back(new PointLight(Vector3(2 * sin(theta), 0, 2 * cos(theta)), Vector3(1, 1, 1), Vector3(1, 1, 1), Vector3(1, 1, 1)));
-		camera.setBasis(Vector3(2 * sin(theta), 0, 2 * cos(theta)), Vector3(0, 0, 0), Vector3(0, 1, 0));
-		//camera.print();
+
+		camera.setBasis(Vector3(4 * sin(theta), 0, 4 * cos(theta)), Vector3(0, 0, 0), Vector3(0, 1, 0));
 
 		int linesDrawn = 0;
+		int old_percdone = 0;
 #pragma omp parallel for schedule(dynamic)
 		for (int j = 0; j < hei; j++){
 
@@ -92,20 +92,22 @@ int main(int argc, char **argv){
 			{
 				float perc_done = 100.0f * linesDrawn++ / (float)hei;
 				printf("\r%2.0f ", perc_done);
-				for (int k = 0; k < (int)(perc_done / 2); k++){
-					putchar('=');
+				if ((int)perc_done > old_percdone){
+					old_percdone = (int)perc_done;
+					for (int k = 0; k < (int)(perc_done / 2); k++){
+						putchar('=');
+					}
+					for (int k = 0; k < 50 - (int)(perc_done / 2) - 1; k++){
+						putchar('-');
+					}
+					fflush(stdout);
 				}
-				for (int k = 0; k < 50 - (int)(perc_done / 2) - 1; k++){
-					putchar('-');
-				}
-				fflush(stdout);
 			}
 #endif
 
 			for (int i = 0; i < wid; i++){
 				Ray ray = camera.castRay(i, j);
 
-				//Vector3 c(abs(ray.dir[0]), abs(ray.dir[1]), abs(ray.dir[2]));
 				Vector3 c(0, 0, 0);
 
 				HitVector hit;
@@ -124,7 +126,7 @@ int main(int argc, char **argv){
 			}
 		}
 
-		printf("\n");
+		//printf("\n");
 
 		float m = 0;
 		for (int j = 0; j < hei; j++)
@@ -134,13 +136,19 @@ int main(int argc, char **argv){
 			m = max4(m, light[0], light[1], light[2]);
 		}
 
+		m = log(m);
 		// scale all of lb, save to b
 		// save b
 
 		#pragma omp parallel for
 		for (int j = 0; j < hei; j++)
 		for (int i = 0; i < wid; i++){
-			Vector3 scaled = lb.at(i, j) * (0xFF / m);
+			Vector3 scaled = lb.at(i, j);
+
+			scaled = (scaled.length() > 0) ? Vector3(log(scaled[0]), log(scaled[1]), log(scaled[2])) : Vector3(0 , 0, 0);
+			scaled /= m;
+			scaled *= 0xFF;
+			
 			Color c = Color((unsigned char)abs(scaled[0]), (unsigned char)abs(scaled[1]), (unsigned char)abs(scaled[2]));
 			b.at(i, j) = c;
 		}
@@ -152,12 +160,12 @@ int main(int argc, char **argv){
 
 		high_resolution_clock::time_point frame_end = high_resolution_clock::now();
 		duration<double> frametime = duration_cast<duration<double>>(frame_end - frame_start);
-		printf("time for frame: %f\n", frametime.count());
+		printf("| time for frame #%3d: %3.2f | \n", framecount, frametime.count());
 	}
 	
 	high_resolution_clock::time_point time_end = high_resolution_clock::now();
 	duration<double> runtime = duration_cast<duration<double>>(time_end - time_start);
-	printf("time to render: %f\n", runtime.count());
+	printf("\ntime to render: %f\n", runtime.count());
 	getchar();
 
 	return 0;
@@ -171,10 +179,10 @@ void createFractal(vector<const Surface *> &surfaces) {
 	high_resolution_clock::time_point fractal_time_start = high_resolution_clock::now();
 
 #pragma omp parallel for schedule(dynamic)
-	for (int k = 0; k < num_threads * 10; k++) {
+	for (int k = 0; k < num_threads; k++) {
 		Vector3 p(0, 0, 0);
 		Vector3 col(0, 0, 0);
-		for (int i = 0; i < fractal_points / num_threads / 10; i++){
+		while (surfaces.size() != fractal_points){
 			unsigned int idx;
 			rdrand_u32(&idx);
 			idx %= n_affines;
@@ -182,17 +190,16 @@ void createFractal(vector<const Surface *> &surfaces) {
 			AffineTransform &aff = affs[idx];
 			p = aff.apply(p);
 
-			float x = sin(p[0]);
-			float y = sin(p[1]);
-			float z = sin(p[2]);
-
-			p = Vector3(x, y, z);
+			p = v3z(p);
 
 			col += aff.col;
 			col /= 2;
 
 #pragma omp critical
-			surfaces.push_back(new Sphere(Vector3(x, y, z), 0.001f, col));
+			{
+				if (surfaces.size() < fractal_points)
+					surfaces.push_back(new Sphere(p, col));
+			}
 		}
 	}
 
