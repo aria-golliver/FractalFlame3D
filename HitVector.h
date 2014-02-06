@@ -9,7 +9,7 @@ typedef struct {
     bool hit;
     Vector3 normal;
     Vector3 hitPoint;
-    Vector3 totalLight;
+    Vector4 totalLight;
     Ray ray;
     float t;
 } HitVector;

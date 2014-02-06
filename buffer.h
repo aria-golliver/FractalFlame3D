@@ -41,22 +41,22 @@ public:
 		alloc();
 	}
 
-	Vector3 at(unsigned int x, unsigned int y) const {
+	Vector4 at(unsigned int x, unsigned int y) const {
 		return this->buffer[x + (y * this->w)];
 	}
 
-	Vector3 & at(unsigned int x, unsigned int y){
+	Vector4 & at(unsigned int x, unsigned int y){
 		return this->buffer[x + (y * this->w)];
 	}
 
 private:
 	unsigned int w;
     unsigned int h;
-	Vector3 *buffer;
+	Vector4 *buffer;
 	void alloc(){
-		buffer = (Vector3 *) malloc(this->w * this->h * sizeof(Vector3));
+		buffer = (Vector4 *) calloc(this->w * this->h, sizeof(Vector4));
         for(unsigned int i = 0; i < this->w * this->h; i++){
-            buffer[i] = Vector3(0, 0, 0);
+            buffer[i] = Vector4(0, 0, 0, 0);
         }
 	}
 };

@@ -12,7 +12,7 @@ public:
 
 	Ray(Vector3 pos, Vector3 dir): 
         pos(pos),
-        dir(dir.normalize()),
+        dir(dir),
         inv(1.0f / dir)
     {};
 	

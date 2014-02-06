@@ -26,12 +26,13 @@ public:
 		setabs(col[0]);
 		setabs(col[1]);
 		setabs(col[2]);
+		col[3] = 0;
 
 		float maxcol = max3(col[0], col[1], col[2]);
 		col /= maxcol;
 	}
 
-	Vector3 col;
+	Vector4 col;
 
 	Vector3 apply(const Vector3 &p) const {
 		float x = (p[0] * a) + (p[1] * b) + (p[2] * c) + (d);

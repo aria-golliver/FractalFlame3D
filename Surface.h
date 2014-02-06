@@ -29,7 +29,7 @@ public:
     //float shiny, reflect, alpha;
 
 	Vector3 min_point, max_point;
-	Vector3 mat_ambient;
+	Vector4 mat_ambient;
 	//AABBox AABB;
 };
 

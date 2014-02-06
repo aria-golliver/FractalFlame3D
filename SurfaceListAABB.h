@@ -89,23 +89,19 @@ public:
 
 			float mean[3] = { 0, 0, 0 };
 
-			for (const Surface *surface : *surfaces){
-				min_x = min2(min_x, surface->min_point[0]);
-				min_y = min2(min_y, surface->min_point[1]);
-				min_z = min2(min_z, surface->min_point[2]);
-				
-				max_x = max2(max_x, surface->max_point[0]);
-				max_y = max2(max_y, surface->max_point[1]);
-				max_z = max2(max_z, surface->max_point[2]);
+			for (int i = 0; i < size; i++){
+				min_x = min2(min_x, surfaces->at(i)->min_point[0]);
+				min_y = min2(min_y, surfaces->at(i)->min_point[1]);
+				min_z = min2(min_z, surfaces->at(i)->min_point[2]);
 
-				mean[0] += surface->min_point[0];
-				mean[1] += surface->min_point[1];
-				mean[2] += surface->min_point[2];
+				max_x = max2(max_x, surfaces->at(i)->max_point[0]);
+				max_y = max2(max_y, surfaces->at(i)->max_point[1]);
+				max_z = max2(max_z, surfaces->at(i)->max_point[2]);
+
+				mean[0] += surfaces->at(i)->min_point[0] / size;
+				mean[1] += surfaces->at(i)->min_point[1] / size;
+				mean[2] += surfaces->at(i)->min_point[2] / size;
 			}
-
-			mean[0] /= size;
-			mean[1] /= size;
-			mean[2] /= size;
 
 			float dx = abs(max_x - min_x);
 			float dy = abs(max_y - min_y);

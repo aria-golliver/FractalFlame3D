@@ -50,7 +50,7 @@
     <PlatformToolset>Intel C++ Compiler XE 14.0</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
-    <NumberOfCilkThreads>4</NumberOfCilkThreads>
+    <NumberOfCilkThreads>2</NumberOfCilkThreads>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">

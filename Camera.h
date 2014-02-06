@@ -49,7 +49,7 @@ public:
 
 		const float U = l + (r - l) * (i + 0.5f) / wid;
 		const float V = b + (t - b) * (j + 0.5f) / hei;
-		const Vector3 dir = ((-d)*w + U*u + V*v);
+		const Vector3 dir = ((-d)*w + U*u + V*v).normalize();
 
 		return Ray(this->e, dir);
 	}

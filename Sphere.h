@@ -8,7 +8,7 @@
 
 class Sphere : public Surface {
 public:
-	Sphere(Vector3 pos, Vector3 mat_ambient){
+	Sphere(Vector3 pos, Vector4 mat_ambient){
 		this->pos = pos;
 
 		
